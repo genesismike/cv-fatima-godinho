@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Maria de Fátima Vilares Godinho — CV</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 :root {
-  --ink:#0f1923; --teal:#0d7c7c; --teal-lt:#e4f4f4; --coral:#c9952a;
+  --ink:#0f1923; --teal:#0d7c7c; --teal-lt:#e4f4f4; --coral:#1a2f5a;
   --sand:#faf7f2; --white:#ffffff; --mid:#4a5568; --border:#dde8e8; --tag-txt:#0a5c5c;
   --dark-bg:#2c4a5a;
 }
@@ -16,20 +16,20 @@ html{scroll-behavior:smooth;}
 body{background:var(--sand);color:var(--ink);font-family:'Outfit',sans-serif;font-size:14px;line-height:1.6;}
 
 /* TOPBAR */
-.topbar{position:sticky;top:0;z-index:200;background:#2c4a5a;height:56px;display:flex;align-items:center;justify-content:space-between;padding:0 48px;box-shadow:0 2px 20px rgba(0,0,0,.25);}
-.topbar-name{font-family:'Playfair Display',serif;font-size:15px;color:#fff;letter-spacing:.04em;}
-.topbar-name span{color:var(--coral);}
+.topbar{position:sticky;top:0;z-index:200;background:#4a7a8a;height:56px;display:flex;align-items:center;justify-content:space-between;padding:0 48px;box-shadow:0 2px 20px rgba(0,0,0,.25);}
+.topbar-name{font-family:'DM Sans',sans-serif;font-size:15px;color:#fff;letter-spacing:.04em;}
+.topbar-name span{color:#fff;}
 .btn-dl{display:inline-flex;align-items:center;gap:8px;background:var(--coral);color:#fff;border:none;padding:10px 22px;border-radius:4px;font-family:'Outfit',sans-serif;font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;transition:all .2s;}
-.btn-dl:hover{background:#a87820;transform:translateY(-1px);box-shadow:0 4px 14px rgba(201,149,42,.4);}
+.btn-dl:hover{background:#162650;transform:translateY(-1px);box-shadow:0 4px 14px rgba(26,47,90,.4);}
 .btn-dl svg{width:14px;height:14px;}
 
 /* HERO */
-.hero{background:#2c4a5a;padding:64px 48px 56px;display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center;position:relative;overflow:hidden;}
+.hero{background:#4a7a8a;padding:64px 48px 56px;display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center;position:relative;overflow:hidden;}
 .hero::after{content:'';position:absolute;bottom:-120px;right:-120px;width:360px;height:360px;border-radius:50%;border:60px solid rgba(13,124,124,.18);pointer-events:none;}
 .hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(13,124,124,.2);border:1px solid rgba(13,124,124,.4);color:#5dd6d6;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;padding:5px 14px;border-radius:20px;margin-bottom:20px;}
 .hero-badge::before{content:'';width:6px;height:6px;border-radius:50%;background:#5dd6d6;}
-.hero h1{font-family:'Playfair Display',serif;font-size:clamp(36px,4.5vw,58px);font-weight:700;color:#fff;line-height:1.08;margin-bottom:6px;}
-.hero h1 em{font-style:italic;color:var(--coral);}
+.hero h1{font-family:'DM Sans',sans-serif;font-size:clamp(36px,4.5vw,58px);font-weight:700;color:#fff;line-height:1.08;margin-bottom:6px;}
+.hero h1 em{font-style:italic;color:#fff;}
 .hero-sub{font-size:13px;font-weight:400;color:#7fa8a8;letter-spacing:.12em;text-transform:uppercase;margin-top:14px;}
 .hero-sub strong{color:#a8d4d4;font-weight:500;}
 .hero-contacts{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:24px 28px;display:flex;flex-direction:column;gap:14px;min-width:240px;position:relative;z-index:1;}
@@ -47,7 +47,7 @@ body{background:var(--sand);color:var(--ink);font-family:'Outfit',sans-serif;fon
 .s-section:last-child{margin-bottom:0;}
 .s-title{font-size:10px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--teal);margin-bottom:18px;display:flex;align-items:center;gap:10px;}
 .s-title::before{content:'';width:20px;height:2px;background:var(--coral);border-radius:2px;flex-shrink:0;}
-.about-p{font-size:13.5px;line-height:1.75;color:var(--mid);font-style:italic;font-family:'Playfair Display',serif;}
+.about-p{font-size:13.5px;line-height:1.75;color:var(--mid);font-style:italic;font-family:'DM Sans',sans-serif;}
 .skills-grid{display:flex;flex-direction:column;gap:8px;}
 .skill-pill{display:flex;align-items:center;gap:10px;font-size:12.5px;color:var(--ink);padding:7px 0;border-bottom:1px solid #f0f0f0;}
 .skill-pill:last-child{border-bottom:none;}
@@ -67,7 +67,7 @@ body{background:var(--sand);color:var(--ink);font-family:'Outfit',sans-serif;fon
 .c-header{display:flex;align-items:center;gap:16px;margin-bottom:32px;}
 .c-header-icon{width:36px;height:36px;background:var(--teal);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
 .c-header-icon svg{width:16px;height:16px;stroke:#fff;}
-.c-title{font-family:'Playfair Display',serif;font-size:24px;font-weight:700;color:var(--ink);}
+.c-title{font-family:'DM Sans',sans-serif;font-size:24px;font-weight:700;color:var(--ink);}
 .c-line{flex:1;height:1px;background:var(--border);}
 
 /* TIMELINE */
@@ -76,17 +76,17 @@ body{background:var(--sand);color:var(--ink);font-family:'Outfit',sans-serif;fon
 .tl-item{padding-left:40px;margin-bottom:32px;position:relative;}
 .tl-dot{position:absolute;left:4px;top:6px;width:16px;height:16px;border-radius:50%;background:var(--white);border:2px solid var(--teal);z-index:1;}
 .tl-dot.current{background:var(--coral);border-color:var(--coral);}
-.tl-dot.current::after{content:'';position:absolute;inset:-4px;border-radius:50%;border:2px solid rgba(201,149,42,.3);}
+.tl-dot.current::after{content:'';position:absolute;inset:-4px;border-radius:50%;border:2px solid rgba(26,47,90,.3);}
 .tl-card{background:var(--white);border-radius:10px;padding:20px 24px;border:1px solid var(--border);transition:box-shadow .2s,transform .2s;}
 .tl-card:hover{box-shadow:0 6px 24px rgba(13,124,124,.12);transform:translateY(-2px);}
 .tl-period{font-size:10.5px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--coral);margin-bottom:4px;}
-.tl-role{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--ink);margin-bottom:2px;}
+.tl-role{font-family:'DM Sans',sans-serif;font-size:18px;font-weight:700;color:var(--ink);margin-bottom:2px;}
 .tl-company{font-size:12px;color:var(--teal);font-weight:500;margin-bottom:14px;letter-spacing:.04em;}
 .tl-tags{display:flex;flex-wrap:wrap;gap:6px;}
 .tag{background:var(--teal-lt);color:var(--tag-txt);font-size:11px;font-weight:500;padding:4px 12px;border-radius:20px;}
-.tag.highlight{background:rgba(201,149,42,.1);color:var(--coral);}
-.auchan-bar{background:linear-gradient(135deg,#2c4a5a 0%,#3a6070 100%);border-radius:10px;padding:20px 24px;color:#fff;margin-top:4px;}
-.auchan-years{font-size:42px;font-family:'Playfair Display',serif;font-weight:700;color:var(--coral);line-height:1;margin-bottom:2px;}
+.tag.highlight{background:rgba(26,47,90,.1);color:var(--coral);}
+.auchan-bar{background:linear-gradient(135deg,#4a7a8a 0%,#5a8a9a 100%);border-radius:10px;padding:20px 24px;color:#fff;margin-top:4px;}
+.auchan-years{font-size:42px;font-family:'DM Sans',sans-serif;font-weight:700;color:var(--coral);line-height:1;margin-bottom:2px;}
 .auchan-label{font-size:11px;color:#7fa8a8;letter-spacing:.12em;text-transform:uppercase;margin-bottom:16px;}
 .auchan-tags{display:flex;flex-wrap:wrap;gap:6px;}
 .auchan-tag{background:rgba(255,255,255,.1);color:#c8dede;font-size:11px;padding:4px 12px;border-radius:20px;border:1px solid rgba(255,255,255,.15);}
@@ -114,7 +114,7 @@ body{background:var(--sand);color:var(--ink);font-family:'Outfit',sans-serif;fon
   .hero{display:block!important;background:#0f1923!important;padding:22px 28px 18px!important;position:relative!important;overflow:visible!important;}
   .hero::after{display:none!important;}
   .hero h1{font-size:28px!important;color:#fff!important;line-height:1.1!important;}
-  .hero h1 em{color:#c9952a!important;font-style:italic!important;}
+  .hero h1 em{color:#1a2f5a!important;font-style:italic!important;}
   .hero-sub{font-size:9.5px!important;color:#7fa8a8!important;margin-top:5px!important;}
   .hero-sub strong{color:#a8d4d4!important;}
   .hero-contacts{position:absolute!important;top:18px!important;right:28px!important;background:rgba(255,255,255,.08)!important;border:1px solid rgba(255,255,255,.18)!important;border-radius:6px!important;padding:12px 16px!important;min-width:0!important;gap:7px!important;z-index:10!important;}
@@ -143,18 +143,18 @@ body{background:var(--sand);color:var(--ink);font-family:'Outfit',sans-serif;fon
   .tl::before{left:6px!important;width:1px!important;background:#0d7c7c!important;}
   .tl-item{padding-left:22px!important;margin-bottom:10px!important;break-inside:avoid!important;}
   .tl-dot{left:0!important;top:4px!important;width:12px!important;height:12px!important;background:#fff!important;border:2px solid #0d7c7c!important;}
-  .tl-dot.current{background:#c9952a!important;border-color:#c9952a!important;}
+  .tl-dot.current{background:#1a2f5a!important;border-color:#1a2f5a!important;}
   .tl-dot.current::after{display:none!important;}
   .tl-card{background:#fff!important;border:1px solid #dde8e8!important;border-radius:5px!important;padding:9px 12px!important;box-shadow:none!important;transform:none!important;break-inside:avoid!important;}
   .tl-card:hover{transform:none!important;box-shadow:none!important;}
-  .tl-period{font-size:7.5px!important;letter-spacing:.1em!important;color:#c9952a!important;}
+  .tl-period{font-size:7.5px!important;letter-spacing:.1em!important;color:#1a2f5a!important;}
   .tl-role{font-size:12px!important;margin-bottom:1px!important;color:#0f1923!important;}
   .tl-company{font-size:9.5px!important;margin-bottom:7px!important;color:#0d7c7c!important;}
   .tl-tags{gap:3px!important;}
   .tag{font-size:8px!important;padding:2px 7px!important;background:#e4f4f4!important;color:#0a5c5c!important;border-radius:20px!important;}
-  .tag.highlight{background:rgba(201,149,42,.12)!important;color:#c9952a!important;}
+  .tag.highlight{background:rgba(26,47,90,.12)!important;color:#1a2f5a!important;}
   .auchan-bar{background:#0f1923!important;border-radius:5px!important;padding:10px 12px!important;break-inside:avoid!important;}
-  .auchan-years{font-size:26px!important;color:#c9952a!important;}
+  .auchan-years{font-size:26px!important;color:#1a2f5a!important;}
   .auchan-label{font-size:7.5px!important;margin-bottom:6px!important;color:#7fa8a8!important;}
   .auchan-tag{font-size:7.5px!important;padding:2px 7px!important;color:#c8dede!important;border-color:rgba(255,255,255,.2)!important;}
   .cv-footer{background:#0f1923!important;padding:10px 28px!important;}
@@ -184,9 +184,9 @@ body{background:var(--sand);color:var(--ink);font-family:'Outfit',sans-serif;fon
       <span class="c-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.29 6.29l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
       +351 966 885 815
     </a>
-    <a href="mailto:mfvgodinho@gmail.com" class="c-row">
+    <a href="/cdn-cgi/l/email-protection#90fdf6e6f7fff4f9fef8ffd0f7fdf1f9fcbef3fffd" class="c-row">
       <span class="c-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span>
-      mfvgodinho@gmail.com
+      <span class="__cf_email__" data-cfemail="3c515a4a5b5358555254537c5b515d5550125f5351">[email&#160;protected]</span>
     </a>
     <a href="https://www.linkedin.com/in/maria-v-godinho" target="_blank" class="c-row">
       <span class="c-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></span>
@@ -324,8 +324,8 @@ body{background:var(--sand);color:var(--ink);font-family:'Outfit',sans-serif;fon
         <div class="tl-item">
           <div class="tl-dot"></div>
           <div class="auchan-bar">
-            <div class="tl-period" style="color:#c9952a">1993 — 2017</div>
-            <div class="tl-role" style="color:#fff;font-family:'Playfair Display',serif;font-size:18px;margin-bottom:2px;">Responsável de Recursos Humanos</div>
+            <div class="tl-period" style="color:#1a2f5a">1993 — 2017</div>
+            <div class="tl-role" style="color:#fff;font-family:'DM Sans',sans-serif;font-size:18px;margin-bottom:2px;">Responsável de Recursos Humanos</div>
             <div class="tl-company" style="color:#5dd6d6;margin-bottom:16px;">Auchan Retail Portugal</div>
             <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:4px;">
               <div class="auchan-years">24</div>
@@ -335,6 +335,4 @@ body{background:var(--sand);color:var(--ink);font-family:'Outfit',sans-serif;fon
               <span class="auchan-tag">Seleção &amp; Recrutamento</span>
               <span class="auchan-tag">Estruturas salariais</span>
               <span class="auchan-tag">Gestão de contratos</span>
-              <span class="auchan-tag">Saúde &amp; Segurança</span>
-              <span class="auchan-tag">Bem-estar organizacional</span>
-              <span class="auchan-tag">Gestão de confl
+              <span class="auchan-tag">Saúde &amp; Seguran
