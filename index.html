@@ -2,374 +2,441 @@
 <html lang="pt">
 <head>
 <meta charset="UTF-8">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+CiAgPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiBmaWxsPSIjRTEwNjAwIiByeD0iNCIvPgogIDx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBkb21pbmFudC1iYXNlbGluZT0iY2VudHJhbCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgCiAgICAgICAgZm9udC1mYW1pbHk9IkFyaWFsIEJsYWNrLCBzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iOTAwIiBmb250LXNpemU9IjE0IiBmaWxsPSJ3aGl0ZSI+UDU8L3RleHQ+Cjwvc3ZnPg==">
+<link rel="shortcut icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+CiAgPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiBmaWxsPSIjRTEwNjAwIiByeD0iNCIvPgogIDx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBkb21pbmFudC1iYXNlbGluZT0iY2VudHJhbCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgCiAgICAgICAgZm9udC1mYW1pbHk9IkFyaWFsIEJsYWNrLCBzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iOTAwIiBmb250LXNpemU9IjE0IiBmaWxsPSJ3aGl0ZSI+UDU8L3RleHQ+Cjwvc3ZnPg==">
+<meta property="og:title" content="ParqueP5 — Estacionamento junto ao Aeroporto de Lisboa">
+<meta property="og:description" content="Estacionamento privado junto ao Aeroporto de Lisboa. Transfer gratuito 24h incluído. Reserve online e pague só no regresso.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://lp.parquep5.pt">
+<meta property="og:locale" content="pt_PT">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="ParqueP5 — Estacionamento junto ao Aeroporto de Lisboa">
+<meta name="twitter:description" content="Estacionamento privado junto ao Aeroporto de Lisboa. Transfer gratuito 24h incluído.">
+<meta name="description" content="Estacionamento privado junto ao Aeroporto de Lisboa. Transfer gratuito 24h incluído. Reserve online em 2 minutos e pague só no regresso.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Maria de Fátima Vilares Godinho — CV</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<title>ParqueP5 — Estacionamento no Aeroporto de Lisboa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700;800&family=Barlow+Condensed:wght@700;800;900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700;800&family=Barlow+Condensed:wght@700;800;900&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700;800&family=Barlow+Condensed:wght@700;800;900&display=swap"></noscript>
 <style>
-:root {
-  --ink:#0f1923; --teal:#0d7c7c; --teal-lt:#e4f4f4; --coral:#e8573a;
-  --sand:#faf7f2; --white:#ffffff; --mid:#4a5568; --border:#dde8e8; --tag-txt:#0a5c5c;
-}
-*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
-html{scroll-behavior:smooth;}
-body{background:var(--sand);color:var(--ink);font-family:'Outfit',sans-serif;font-size:14px;line-height:1.6;}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--red:#E10600;--red-dark:#b80500;--black:#000;--black-soft:#0f0f0f;--black-mid:#1a1a1a;--white:#fff;--off-white:#f5f5f5;--gray:#888;--text:#1a1a1a}
+html{scroll-behavior:smooth}
+body{font-family:'Barlow',sans-serif;background:var(--white);color:var(--text);line-height:1.6}
+nav{background:var(--black);padding:0 48px;display:flex;align-items:center;justify-content:space-between;height:70px;position:sticky;top:0;z-index:100;border-bottom:3px solid var(--red)}
+.logo{text-decoration:none;display:flex;align-items:center}
 
-/* TOPBAR */
-.topbar{position:sticky;top:0;z-index:200;background:var(--ink);height:56px;display:flex;align-items:center;justify-content:space-between;padding:0 48px;box-shadow:0 2px 20px rgba(0,0,0,.25);}
-.topbar-name{font-family:'Playfair Display',serif;font-size:15px;color:#fff;letter-spacing:.04em;}
-.topbar-name span{color:var(--coral);}
-.btn-dl{display:inline-flex;align-items:center;gap:8px;background:var(--coral);color:#fff;border:none;padding:10px 22px;border-radius:4px;font-family:'Outfit',sans-serif;font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;transition:all .2s;}
-.btn-dl:hover{background:#cf3f24;transform:translateY(-1px);box-shadow:0 4px 14px rgba(232,87,58,.4);}
-.btn-dl svg{width:14px;height:14px;}
+.logo-text span{color:var(--red)}
 
-/* HERO */
-.hero{background:var(--ink);padding:64px 48px 56px;display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center;position:relative;overflow:hidden;}
-.hero::after{content:'';position:absolute;bottom:-120px;right:-120px;width:360px;height:360px;border-radius:50%;border:60px solid rgba(13,124,124,.18);pointer-events:none;}
-.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(13,124,124,.2);border:1px solid rgba(13,124,124,.4);color:#5dd6d6;font-size:10px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;padding:5px 14px;border-radius:20px;margin-bottom:20px;}
-.hero-badge::before{content:'';width:6px;height:6px;border-radius:50%;background:#5dd6d6;}
-.hero h1{font-family:'Playfair Display',serif;font-size:clamp(36px,4.5vw,58px);font-weight:700;color:#fff;line-height:1.08;margin-bottom:6px;}
-.hero h1 em{font-style:italic;color:var(--coral);}
-.hero-sub{font-size:13px;font-weight:400;color:#7fa8a8;letter-spacing:.12em;text-transform:uppercase;margin-top:14px;}
-.hero-sub strong{color:#a8d4d4;font-weight:500;}
-.hero-contacts{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:24px 28px;display:flex;flex-direction:column;gap:14px;min-width:240px;position:relative;z-index:1;}
-.c-row{display:flex;align-items:center;gap:12px;color:#c8dede;font-size:12.5px;text-decoration:none;transition:color .2s;}
-.c-row:hover{color:#5dd6d6;}
-.c-icon{width:32px;height:32px;border-radius:8px;background:rgba(13,124,124,.25);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
-.c-icon svg{width:13px;height:13px;stroke:#5dd6d6;}
+.nav-right{display:flex;align-items:center;gap:20px}
+.nav-phone{color:var(--white);text-decoration:none;font-size:16px;font-weight:700;display:flex;align-items:center;gap:8px;transition:color .2s}
+.nav-phone:hover{color:var(--red)}
+.nav-cta{background:var(--red);color:var(--white);text-decoration:none;font-size:13px;font-weight:700;padding:10px 22px;border-radius:4px;letter-spacing:.5px;text-transform:uppercase;transition:background .2s;cursor:pointer}
+.nav-cta:hover{background:var(--red-dark)}
+.hero{background:var(--black);padding:80px 48px 0;position:relative;overflow:hidden}
+.hero::after{content:'P5';position:absolute;right:-20px;bottom:-40px;font-family:'Barlow Condensed',sans-serif;font-size:400px;font-weight:900;color:rgba(255,255,255,.03);line-height:1;pointer-events:none;user-select:none}
+.hero-inner{max-width:1140px;margin:0 auto;display:grid;grid-template-columns:1fr 460px;gap:64px;align-items:start}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(225,6,0,.15);border:1px solid rgba(225,6,0,.5);color:#ff6b66;padding:6px 16px;border-radius:2px;font-size:12px;font-weight:700;margin-bottom:24px;letter-spacing:1.5px;text-transform:uppercase}
+.hero h1{font-family:'Barlow Condensed',sans-serif;font-size:clamp(44px,6vw,72px);font-weight:900;color:var(--white);line-height:1;margin-bottom:20px;text-transform:uppercase}
+.hero h1 em{font-style:italic;color:var(--red)}
+.hero-sub{color:rgba(255,255,255,.6);font-size:17px;margin-bottom:44px;max-width:460px;font-weight:400;line-height:1.7}
+.trust-row{display:flex;border:1px solid rgba(255,255,255,.1);border-radius:4px;overflow:hidden;flex-wrap:wrap}
+.trust-item{display:flex;align-items:center;gap:8px;color:rgba(255,255,255,.75);font-size:13px;font-weight:600;padding:12px 18px;border-right:1px solid rgba(255,255,255,.1);text-transform:uppercase;letter-spacing:.5px}
+.trust-item:last-child{border-right:none}
+.trust-icon{color:var(--red)}
+.form-card{background:var(--white);border-radius:6px;padding:28px 26px;box-shadow:0 0 0 1px rgba(0,0,0,.08),0 32px 80px rgba(0,0,0,.6);position:relative;z-index:2;margin-bottom:-50px}
+.form-card-header{border-left:4px solid var(--red);padding-left:14px;margin-bottom:18px}
+.form-card h2{font-family:'Barlow Condensed',sans-serif;font-size:22px;font-weight:900;color:var(--black);text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px}
+.form-card-header p{font-size:13px;color:#555}
+.step-indicator{display:flex;gap:6px;margin-bottom:16px}
+.step-dot{height:4px;border-radius:2px;flex:1;background:#e8e8e8;transition:background .3s}
+.step-dot.active{background:var(--red)}
+.step-dot.done{background:var(--red-dark)}
+.form-step{display:none}
+.form-step.active{display:block}
+.step-title{font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:700;color:#444;text-transform:uppercase;letter-spacing:1px;margin-bottom:14px}
+.form-error{background:#fff0f0;border:1.5px solid var(--red);color:var(--red);border-radius:4px;padding:10px 14px;font-size:13px;font-weight:600;margin-bottom:10px;display:none}
+.form-error.visible{display:block}
+.form-group{margin-bottom:11px}
+.form-group label{display:block;font-size:11px;font-weight:700;color:var(--black);margin-bottom:4px;letter-spacing:.8px;text-transform:uppercase}
+.form-group input,.form-group select,.form-group textarea{width:100%;padding:10px 13px;border:1.5px solid #e0e0e0;border-radius:4px;font-family:'Barlow',sans-serif;font-size:14px;color:var(--text);background:#fafafa;transition:border-color .2s,box-shadow .2s;outline:none;resize:none}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--red);box-shadow:0 0 0 3px rgba(225,6,0,.07);background:white}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.price-display{background:var(--black);border-radius:6px;padding:14px 16px;margin:12px 0;display:none}
+.price-display.visible{display:block}
+.price-main{display:flex;align-items:baseline;justify-content:space-between}
+.price-label{font-size:12px;font-weight:700;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:1px}
+.price-value{font-family:'Barlow Condensed',sans-serif;font-size:36px;font-weight:900;color:var(--white);line-height:1}
+.price-value span{font-size:18px;color:var(--red)}
+.price-breakdown{margin-top:8px;padding-top:8px;border-top:1px solid rgba(255,255,255,.1);font-size:12px;color:rgba(255,255,255,.5);line-height:1.8}
+.price-breakdown strong{color:rgba(255,255,255,.8)}
+.price-note{font-size:11px;color:rgba(255,255,255,.35);margin-top:6px;font-style:italic}
+.extras-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px}
+.extra-option{position:relative}
+.extra-option input[type=checkbox]{position:absolute;opacity:0;width:0;height:0}
+.extra-label{display:flex;flex-direction:column;gap:3px;border:1.5px solid #e0e0e0;border-radius:6px;padding:11px 13px;cursor:pointer;transition:border-color .2s,background .2s;background:#fafafa;position:relative}
+.extra-label:hover{border-color:#bbb;background:white}
+.extra-option input:checked+.extra-label{border-color:var(--red);background:#fff5f5}
+.extra-icon{font-size:20px}
+.extra-name{font-size:13px;font-weight:700;color:var(--black);line-height:1.2}
+.extra-price{font-size:12px;color:var(--red);font-weight:700}
+.extra-check{position:absolute;top:8px;right:10px;width:18px;height:18px;background:#e0e0e0;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;color:white;transition:background .2s}
+.extra-option input:checked+.extra-label .extra-check{background:var(--red)}
+.form-divider{text-align:center;font-size:10px;color:#bbb;text-transform:uppercase;letter-spacing:1.5px;margin:8px 0 11px;position:relative}
+.form-divider::before,.form-divider::after{content:'';position:absolute;top:50%;width:36%;height:1px;background:#e8e8e8}
+.form-divider::before{left:0}.form-divider::after{right:0}
+.form-nav{display:flex;gap:10px;margin-top:14px}
+.btn-back{flex:0 0 auto;padding:13px 18px;border:1.5px solid #e0e0e0;background:transparent;color:var(--gray);border-radius:4px;font-family:'Barlow Condensed',sans-serif;font-size:15px;font-weight:700;cursor:pointer;text-transform:uppercase;transition:all .2s}
+.btn-back:hover{border-color:var(--black);color:var(--black)}
+.btn-next,.btn-reserve{flex:1;padding:14px;background:var(--red);color:var(--white);border:none;border-radius:4px;font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:900;cursor:pointer;transition:background .2s,transform .1s;text-transform:uppercase;letter-spacing:.5px}
+.btn-next:hover,.btn-reserve:hover{background:var(--red-dark);transform:translateY(-1px)}
+.form-note{text-align:center;font-size:12px;color:var(--gray);margin-top:10px}
+.stats-strip{background:var(--red);padding:0 48px;margin-top:50px}
+.stats-inner{max-width:1140px;margin:0 auto;display:flex;justify-content:space-around}
+.stat-item{text-align:center;padding:24px 20px;border-right:1px solid rgba(255,255,255,.2);flex:1}
+.stat-item:last-child{border-right:none}
+.stat-num{font-family:'Barlow Condensed',sans-serif;font-size:36px;font-weight:900;color:var(--white);line-height:1;margin-bottom:4px}
+.stat-label{font-size:12px;font-weight:600;color:rgba(255,255,255,.95);text-transform:uppercase;letter-spacing:1px}
+.features{background:var(--off-white);padding:80px 48px}
+.features-inner{max-width:1140px;margin:0 auto}
+.section-label{font-size:11px;font-weight:700;color:var(--red);text-transform:uppercase;letter-spacing:2.5px;margin-bottom:10px}
+.section-title{font-family:'Barlow Condensed',sans-serif;font-size:42px;font-weight:900;color:var(--black);margin-bottom:44px;line-height:1.1;text-transform:uppercase}
+.features-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.feature-card{background:var(--white);border-radius:4px;padding:28px 24px;border:1px solid #e8e8e8;border-top:3px solid #e8e8e8;transition:border-top-color .2s,box-shadow .2s,transform .2s}
+.feature-card:hover{border-top-color:var(--red);box-shadow:0 8px 32px rgba(0,0,0,.08);transform:translateY(-2px)}
+.feature-icon{font-size:28px;margin-bottom:14px;display:block}
+.feature-card h3{font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:800;color:var(--black);margin-bottom:8px;text-transform:uppercase}
+.feature-card p{font-size:14px;color:#666;line-height:1.6}
+.pricing{padding:80px 48px;background:var(--black)}
+.pricing-inner{max-width:1140px;margin:0 auto}
+.pricing .section-label{color:var(--red)}
+.pricing .section-title{color:var(--white);margin-bottom:48px}
+.pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.price-card{border:1px solid rgba(255,255,255,.1);border-radius:4px;padding:32px 28px;background:var(--black-mid)}
+.price-card.featured{border-color:var(--red);background:var(--black-soft);position:relative}
+.price-card.featured::before{content:'Mais popular';position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--red);color:white;font-size:11px;font-weight:700;padding:4px 16px;border-radius:2px;letter-spacing:1px;text-transform:uppercase;white-space:nowrap;font-family:'Barlow Condensed',sans-serif}
+.price-type{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--gray);margin-bottom:8px}
+.price-card h3{font-family:'Barlow Condensed',sans-serif;font-size:24px;font-weight:900;color:var(--white);margin-bottom:6px;text-transform:uppercase}
+.price-desde{font-size:13px;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+.price-valor{font-family:'Barlow Condensed',sans-serif;font-size:56px;font-weight:900;color:var(--white);line-height:1;margin-bottom:24px}
+.price-valor span{font-size:18px;color:rgba(255,255,255,.4);margin-left:4px}
+.price-features{list-style:none;margin-bottom:28px}
+.price-features li{font-size:14px;color:rgba(255,255,255,.7);padding:8px 0;display:flex;align-items:center;gap:10px;border-bottom:1px solid rgba(255,255,255,.07)}
+.price-features li:last-child{border:none}
+.check{color:var(--red);font-size:14px;flex-shrink:0;font-weight:700}
+.btn-price{width:100%;padding:13px;border:2px solid rgba(255,255,255,.2);background:transparent;color:rgba(255,255,255,.8);border-radius:4px;font-family:'Barlow Condensed',sans-serif;font-size:16px;font-weight:700;cursor:pointer;transition:all .2s;text-transform:uppercase;letter-spacing:.5px}
+.btn-price:hover{border-color:white;color:white}
+.btn-price.red{background:var(--red);border-color:var(--red);color:white}
+.btn-price.red:hover{background:var(--red-dark);border-color:var(--red-dark)}
+.cta-strip{background:var(--red);padding:64px 48px;text-align:center;position:relative;overflow:hidden}
+.cta-strip::before{content:'✈';position:absolute;left:5%;top:50%;transform:translateY(-50%);font-size:120px;opacity:.08;pointer-events:none}
+.cta-strip::after{content:'✈';position:absolute;right:5%;top:50%;transform:translateY(-50%) scaleX(-1);font-size:120px;opacity:.08;pointer-events:none}
+.cta-strip h2{font-family:'Barlow Condensed',sans-serif;font-size:48px;font-weight:900;color:var(--white);margin-bottom:10px;text-transform:uppercase}
+.cta-strip p{color:rgba(255,255,255,.75);font-size:17px;margin-bottom:36px}
+.cta-buttons{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.btn-white{padding:16px 40px;background:var(--white);color:var(--red);border:none;border-radius:4px;font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:900;cursor:pointer;text-decoration:none;text-transform:uppercase;transition:background .2s}
+.btn-white:hover{background:#f0f0f0}
+.btn-outline-white{padding:16px 40px;background:transparent;color:white;border:2px solid rgba(255,255,255,.6);border-radius:4px;font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:700;text-decoration:none;text-transform:uppercase;transition:border-color .2s}
+.btn-outline-white:hover{border-color:white}
+footer{background:#000;border-top:3px solid var(--red);padding:36px 48px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px}
+.footer-info{color:rgba(255,255,255,.4);font-size:13px;line-height:1.8}
+.footer-info strong{color:rgba(255,255,255,.7)}
+.footer-links{display:flex;gap:24px;flex-wrap:wrap}
+.footer-links a{color:rgba(255,255,255,.4);text-decoration:none;font-size:13px;transition:color .2s}
+.footer-links a:hover{color:var(--red)}
+/* THANK YOU PAGE */
+.ty-page{display:none}
+body.ty-active nav .nav-cta{display:none}
+body.ty-active .hero,body.ty-active .stats-strip,body.ty-active .features,body.ty-active .pricing,body.ty-active .cta-strip,body.ty-active footer{display:none}
+.ty-hero{background:var(--black);padding:56px 48px 52px;position:relative;overflow:hidden;border-bottom:3px solid var(--red)}
+.ty-hero::after{content:'✓';position:absolute;right:40px;bottom:-30px;font-size:260px;font-weight:900;color:rgba(225,6,0,.05);line-height:1;pointer-events:none}
+.ty-hero-inner{max-width:820px;margin:0 auto}
+.ty-badge{display:inline-flex;align-items:center;gap:10px;background:rgba(225,6,0,.15);border:1px solid rgba(225,6,0,.4);color:#ff6b66;padding:8px 20px;border-radius:2px;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:28px}
+.ty-pulse{width:8px;height:8px;background:var(--red);border-radius:50%;animation:pulse 1.5s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.ty-hero h2{font-family:'Barlow Condensed',sans-serif;font-size:clamp(40px,6vw,64px);font-weight:900;color:var(--white);line-height:1;text-transform:uppercase;margin-bottom:14px}
+.ty-hero h2 em{color:var(--red);font-style:italic}
+.ty-hero p{color:rgba(255,255,255,.55);font-size:16px;max-width:540px;line-height:1.7}
+.ty-main{max-width:820px;margin:0 auto;padding:40px 48px 80px}
+.ty-ref{background:var(--red);border-radius:6px;padding:20px 28px;margin-bottom:28px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.ty-ref-label{font-size:11px;font-weight:700;color:rgba(255,255,255,.7);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px}
+.ty-ref-num{font-family:'Barlow Condensed',sans-serif;font-size:26px;font-weight:900;color:var(--white);letter-spacing:2px}
+.ty-ref-note{font-size:13px;color:rgba(255,255,255,.65);max-width:320px;line-height:1.5}
+.ty-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+.ty-card{background:var(--white);border-radius:6px;padding:24px;border:1px solid #e8e8e8}
+.ty-card-full{grid-column:1/-1}
+.ty-card-label{font-size:11px;font-weight:700;color:var(--red);text-transform:uppercase;letter-spacing:2px;margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid #f0f0f0}
+.ty-row{margin-bottom:12px}
+.ty-row:last-child{margin-bottom:0}
+.ty-key{font-size:11px;font-weight:700;color:var(--gray);text-transform:uppercase;letter-spacing:.8px;margin-bottom:2px}
+.ty-val{font-size:15px;font-weight:600;color:var(--text)}
+.ty-val.big{font-family:'Barlow Condensed',sans-serif;font-size:21px;font-weight:900;color:var(--black)}
+.ty-flight{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:10px;background:var(--off-white);border-radius:6px;padding:14px;margin-bottom:10px}
+.ty-flight:last-child{margin-bottom:0}
+.ty-fend{display:flex;flex-direction:column;gap:2px}
+.ty-fend.right{text-align:right}
+.ty-fcode{font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:800;color:var(--red);text-transform:uppercase;letter-spacing:1px}
+.ty-fdt{font-size:14px;font-weight:700;color:var(--black)}
+.ty-flabel{font-size:11px;color:var(--gray);font-weight:600;text-transform:uppercase}
+.ty-arrow{display:flex;flex-direction:column;align-items:center;gap:3px}
+.ty-arrow svg{width:70px;height:14px}
+.ty-arrow span{font-size:10px;font-weight:700;color:var(--gray);text-transform:uppercase;letter-spacing:1px}
+.ty-total{background:var(--black);border-radius:6px;padding:24px;margin-bottom:16px}
+.ty-total-top{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:14px;padding-bottom:14px;border-bottom:1px solid rgba(255,255,255,.1)}
+.ty-total-lbl{font-size:11px;font-weight:700;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:2px;margin-bottom:4px}
+.ty-total-sub{font-size:12px;color:rgba(255,255,255,.3)}
+.ty-total-val{font-family:'Barlow Condensed',sans-serif;font-size:46px;font-weight:900;color:var(--white);line-height:1}
+.ty-total-val sup{font-size:20px;color:var(--red)}
+.ty-breakdown{display:flex;flex-direction:column;gap:8px}
+.ty-brow{display:flex;justify-content:space-between;font-size:14px;color:rgba(255,255,255,.6)}
+.ty-brow strong{color:rgba(255,255,255,.85)}
+.ty-brow span{font-weight:700;color:var(--white)}
+.ty-total-note{font-size:11px;color:rgba(255,255,255,.3);margin-top:12px;font-style:italic}
+.ty-steps{background:var(--white);border-radius:6px;padding:24px;border:1px solid #e8e8e8;margin-bottom:16px}
+.ty-step{display:flex;gap:14px;padding:12px 0;border-bottom:1px solid #f5f5f5}
+.ty-step:last-child{border-bottom:none;padding-bottom:0}
+.ty-step:first-child{padding-top:0}
+.ty-step-num{width:30px;height:30px;background:var(--red);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Barlow Condensed',sans-serif;font-size:15px;font-weight:900;color:var(--white);flex-shrink:0;margin-top:2px}
+.ty-step h4{font-size:14px;font-weight:700;color:var(--black);margin-bottom:2px}
+.ty-step p{font-size:13px;color:var(--gray);line-height:1.5}
+.ty-loc{background:var(--white);border-radius:6px;padding:24px;border:1px solid #e8e8e8;margin-bottom:28px}
+.ty-loc-addr{font-size:14px;color:var(--text);line-height:1.8;margin-bottom:14px}
+.ty-loc-addr strong{color:var(--black)}
+.ty-dir-links{display:flex;gap:10px;flex-wrap:wrap}
+.ty-dir-link{display:inline-flex;align-items:center;gap:6px;padding:10px 16px;border-radius:4px;font-size:13px;font-weight:700;text-decoration:none;transition:all .2s}
+.ty-dir-link.gm{background:var(--black);color:var(--white)}
+.ty-dir-link.gm:hover{background:#222}
+.ty-dir-link.wz{background:#08d;color:var(--white)}
+.ty-dir-link.wz:hover{background:#069}
+.ty-cta{display:flex;gap:10px;flex-wrap:wrap}
+.ty-btn-p{padding:15px 28px;background:var(--red);color:var(--white);border:none;border-radius:4px;font-family:'Barlow Condensed',sans-serif;font-size:17px;font-weight:900;cursor:pointer;text-decoration:none;text-transform:uppercase;transition:background .2s}
+.ty-btn-p:hover{background:var(--red-dark)}
+.ty-btn-s{padding:15px 28px;background:transparent;color:var(--black);border:2px solid #ddd;border-radius:4px;font-family:'Barlow Condensed',sans-serif;font-size:17px;font-weight:700;cursor:pointer;text-decoration:none;text-transform:uppercase;transition:all .2s}
+.ty-btn-s:hover{border-color:var(--black)}
+@media(max-width:960px){nav,.hero,.stats-strip,.features,.pricing,.cta-strip,footer{padding-left:24px;padding-right:24px}.hero-inner{grid-template-columns:1fr}.hero{padding-top:60px}.features-grid,.pricing-grid{grid-template-columns:1fr 1fr}.stats-inner{flex-wrap:wrap}.stat-item{min-width:50%}}
+@media(max-width:600px){.features-grid,.pricing-grid,.extras-grid{grid-template-columns:1fr}.form-row{grid-template-columns:1fr}footer{flex-direction:column}.trust-row{flex-direction:column}.trust-item{border-right:none;border-bottom:1px solid rgba(255,255,255,.1)}.trust-item:last-child{border-bottom:none}.ty-grid{grid-template-columns:1fr}.ty-card-full{grid-column:1}.ty-cta{flex-direction:column}.ty-hero,.ty-main{padding-left:20px;padding-right:20px}}
 
-/* LAYOUT */
-.layout{display:grid;grid-template-columns:280px 1fr;}
-
-/* SIDEBAR */
-.sidebar{background:var(--white);border-right:1px solid var(--border);padding:48px 32px;}
-.s-section{margin-bottom:40px;}
-.s-section:last-child{margin-bottom:0;}
-.s-title{font-size:10px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--teal);margin-bottom:18px;display:flex;align-items:center;gap:10px;}
-.s-title::before{content:'';width:20px;height:2px;background:var(--coral);border-radius:2px;flex-shrink:0;}
-.about-p{font-size:13.5px;line-height:1.75;color:var(--mid);font-style:italic;font-family:'Playfair Display',serif;}
-.skills-grid{display:flex;flex-direction:column;gap:8px;}
-.skill-pill{display:flex;align-items:center;gap:10px;font-size:12.5px;color:var(--ink);padding:7px 0;border-bottom:1px solid #f0f0f0;}
-.skill-pill:last-child{border-bottom:none;}
-.skill-dot{width:8px;height:8px;border-radius:50%;background:var(--coral);flex-shrink:0;}
-.lang-row{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid #f0f0f0;font-size:13px;}
-.lang-row:last-child{border-bottom:none;}
-.lang-badge{background:var(--teal-lt);color:var(--tag-txt);font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:3px 10px;border-radius:20px;}
-.lang-badge.native{background:var(--coral);color:#fff;}
-.edu-item{margin-bottom:14px;}
-.edu-name{font-size:13px;font-weight:600;color:var(--ink);}
-.edu-sub{font-size:11.5px;color:var(--mid);margin-top:2px;}
-
-/* CONTENT */
-.content{background:var(--sand);padding:48px 52px;}
-.c-section{margin-bottom:52px;}
-.c-section:last-child{margin-bottom:0;}
-.c-header{display:flex;align-items:center;gap:16px;margin-bottom:32px;}
-.c-header-icon{width:36px;height:36px;background:var(--teal);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
-.c-header-icon svg{width:16px;height:16px;stroke:#fff;}
-.c-title{font-family:'Playfair Display',serif;font-size:24px;font-weight:700;color:var(--ink);}
-.c-line{flex:1;height:1px;background:var(--border);}
-
-/* TIMELINE */
-.tl{position:relative;}
-.tl::before{content:'';position:absolute;left:11px;top:0;bottom:0;width:2px;background:linear-gradient(to bottom,var(--teal),rgba(13,124,124,.1));}
-.tl-item{padding-left:40px;margin-bottom:32px;position:relative;}
-.tl-dot{position:absolute;left:4px;top:6px;width:16px;height:16px;border-radius:50%;background:var(--white);border:2px solid var(--teal);z-index:1;}
-.tl-dot.current{background:var(--coral);border-color:var(--coral);}
-.tl-dot.current::after{content:'';position:absolute;inset:-4px;border-radius:50%;border:2px solid rgba(232,87,58,.3);}
-.tl-card{background:var(--white);border-radius:10px;padding:20px 24px;border:1px solid var(--border);transition:box-shadow .2s,transform .2s;}
-.tl-card:hover{box-shadow:0 6px 24px rgba(13,124,124,.12);transform:translateY(-2px);}
-.tl-period{font-size:10.5px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--coral);margin-bottom:4px;}
-.tl-role{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--ink);margin-bottom:2px;}
-.tl-company{font-size:12px;color:var(--teal);font-weight:500;margin-bottom:14px;letter-spacing:.04em;}
-.tl-tags{display:flex;flex-wrap:wrap;gap:6px;}
-.tag{background:var(--teal-lt);color:var(--tag-txt);font-size:11px;font-weight:500;padding:4px 12px;border-radius:20px;}
-.tag.highlight{background:rgba(232,87,58,.1);color:var(--coral);}
-.auchan-bar{background:linear-gradient(135deg,var(--ink) 0%,#1e3a4a 100%);border-radius:10px;padding:20px 24px;color:#fff;margin-top:4px;}
-.auchan-years{font-size:42px;font-family:'Playfair Display',serif;font-weight:700;color:var(--coral);line-height:1;margin-bottom:2px;}
-.auchan-label{font-size:11px;color:#7fa8a8;letter-spacing:.12em;text-transform:uppercase;margin-bottom:16px;}
-.auchan-tags{display:flex;flex-wrap:wrap;gap:6px;}
-.auchan-tag{background:rgba(255,255,255,.1);color:#c8dede;font-size:11px;padding:4px 12px;border-radius:20px;border:1px solid rgba(255,255,255,.15);}
-
-/* FOOTER */
-.cv-footer{background:var(--ink);padding:24px 48px;display:flex;justify-content:space-between;align-items:center;}
-.cv-footer span{font-size:11px;color:#4a6a6a;letter-spacing:.1em;}
-.cv-footer a{font-size:11px;color:#5dd6d6;text-decoration:none;letter-spacing:.06em;}
-
-@media(max-width:820px){
-  .hero{grid-template-columns:1fr;padding:40px 24px;}
-  .hero-contacts{min-width:auto;}
-  .layout{grid-template-columns:1fr;}
-  .content{padding:36px 24px;}
-  .sidebar{padding:36px 24px;border-right:none;border-bottom:1px solid var(--border);}
-  .topbar{padding:0 20px;}
-  .cv-footer{flex-direction:column;gap:8px;text-align:center;padding:20px;}
-}
-
-/* ════════════════════════════════
-   IMPRESSÃO — layout estável
-════════════════════════════════ */
-@media print {
-  *{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;}
-  @page{size:A4;margin:0;}
-
-  .topbar,.hero-badge,.btn-dl{display:none!important;}
-
-  body{font-family:'Outfit',sans-serif;font-size:11px;color:#0f1923;background:#fff!important;}
-
-  /* Hero */
-  .hero{display:block!important;background:#0f1923!important;padding:22px 28px 18px!important;position:relative!important;overflow:visible!important;}
-  .hero::after{display:none!important;}
-  .hero h1{font-size:28px!important;color:#fff!important;line-height:1.1!important;}
-  .hero h1 em{color:#e8573a!important;font-style:italic!important;}
-  .hero-sub{font-size:9.5px!important;color:#7fa8a8!important;margin-top:5px!important;}
-  .hero-sub strong{color:#a8d4d4!important;}
-  .hero-contacts{position:absolute!important;top:18px!important;right:28px!important;background:rgba(255,255,255,.08)!important;border:1px solid rgba(255,255,255,.18)!important;border-radius:6px!important;padding:12px 16px!important;min-width:0!important;gap:7px!important;z-index:10!important;}
-  .c-row{font-size:9.5px!important;color:#c8dede!important;gap:7px!important;}
-  .c-icon{width:20px!important;height:20px!important;background:rgba(13,124,124,.35)!important;border-radius:5px!important;}
-  .c-icon svg{width:9px!important;height:9px!important;}
-
-  /* Layout: flexbox em vez de grid */
-  .layout{display:flex!important;align-items:flex-start!important;width:100%!important;}
-
-  /* Sidebar */
-  .sidebar{width:180px!important;min-width:180px!important;max-width:180px!important;flex-shrink:0!important;background:#f0fafa!important;border-right:2px solid #0d7c7c!important;border-radius:0!important;padding:16px 14px!important;}
-  .s-section{margin-bottom:16px!important;}
-  .s-title{font-size:7.5px!important;margin-bottom:8px!important;letter-spacing:.18em!important;}
-  .s-title::before{width:12px!important;height:2px!important;}
-  .about-p{font-size:9.5px!important;line-height:1.55!important;}
-  .skill-pill{font-size:9.5px!important;padding:3px 0!important;gap:7px!important;}
-  .skill-dot{width:5px!important;height:5px!important;}
-  .lang-row{font-size:9.5px!important;padding:4px 0!important;}
-  .lang-badge{font-size:7.5px!important;padding:2px 6px!important;}
-  .edu-name{font-size:9.5px!important;}
-  .edu-sub{font-size:8.5px!important;}
-
-  /* Content */
-  .content{flex:1!important;background:#fff!important;padding:16px 20px!important;min-width:0!important;}
-  .c-section{margin-bottom:14px!important;}
-  .c-header{margin-bottom:10px!important;gap:8px!important;}
-  .c-header-icon{width:24px!important;height:24px!important;background:#0d7c7c!important;border-radius:4px!important;}
-  .c-header-icon svg{width:11px!important;height:11px!important;}
-  .c-title{font-size:14px!important;}
-  .c-line{background:#dde8e8!important;}
-
-  /* Timeline */
-  .tl::before{left:6px!important;width:1px!important;background:#0d7c7c!important;}
-  .tl-item{padding-left:22px!important;margin-bottom:10px!important;break-inside:avoid!important;}
-  .tl-dot{left:0!important;top:4px!important;width:12px!important;height:12px!important;background:#fff!important;border:2px solid #0d7c7c!important;}
-  .tl-dot.current{background:#e8573a!important;border-color:#e8573a!important;}
-  .tl-dot.current::after{display:none!important;}
-  .tl-card{background:#fff!important;border:1px solid #dde8e8!important;border-radius:5px!important;padding:9px 12px!important;box-shadow:none!important;transform:none!important;break-inside:avoid!important;}
-  .tl-card:hover{transform:none!important;box-shadow:none!important;}
-  .tl-period{font-size:7.5px!important;letter-spacing:.1em!important;color:#e8573a!important;}
-  .tl-role{font-size:12px!important;margin-bottom:1px!important;color:#0f1923!important;}
-  .tl-company{font-size:9.5px!important;margin-bottom:7px!important;color:#0d7c7c!important;}
-  .tl-tags{gap:3px!important;}
-  .tag{font-size:8px!important;padding:2px 7px!important;background:#e4f4f4!important;color:#0a5c5c!important;border-radius:20px!important;}
-  .tag.highlight{background:rgba(232,87,58,.12)!important;color:#e8573a!important;}
-
-  /* Auchan */
-  .auchan-bar{background:#0f1923!important;border-radius:5px!important;padding:10px 12px!important;break-inside:avoid!important;}
-  .auchan-years{font-size:26px!important;color:#e8573a!important;}
-  .auchan-label{font-size:7.5px!important;margin-bottom:6px!important;color:#7fa8a8!important;}
-  .auchan-tag{font-size:7.5px!important;padding:2px 7px!important;color:#c8dede!important;border-color:rgba(255,255,255,.2)!important;}
-
-  /* Footer */
-  .cv-footer{background:#0f1923!important;padding:10px 28px!important;}
-  .cv-footer span{color:#4a6a6a!important;font-size:8px!important;}
-  .cv-footer a{color:#5dd6d6!important;font-size:8px!important;}
-}
+.nav-links{display:flex;align-items:center;gap:28px;margin-left:32px}
+.nav-links a{color:rgba(255,255,255,.7);text-decoration:none;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;transition:color .2s}
+.nav-links a:hover{color:var(--white)}
+.nav-reservar{padding:9px 20px;background:var(--red);color:var(--white)!important;border-radius:4px;font-family:'Barlow Condensed',sans-serif;font-size:15px;font-weight:900;text-decoration:none;text-transform:uppercase;transition:background .2s;white-space:nowrap}
+.nav-reservar:hover{background:var(--red-dark,#b80500)!important}
+.nav-burger{display:none;background:none;border:none;color:var(--white);font-size:24px;cursor:pointer;padding:4px}
+.nav-mobile{display:none;position:fixed;top:70px;left:0;right:0;z-index:199;background:var(--black);border-bottom:3px solid var(--red);padding:16px 24px;flex-direction:column;gap:0;box-shadow:0 8px 24px rgba(0,0,0,.4)}
+.nav-mobile a{color:rgba(255,255,255,.7);text-decoration:none;font-size:15px;font-weight:700;text-transform:uppercase;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.07);display:block}
+.nav-mobile a:last-child{border-bottom:none}
+.nav-mobile.open{display:flex}
+@media(max-width:768px){.nav-links{display:none}.nav-reservar{display:none}.nav-phone{display:none}.nav-burger{display:block}}
 </style>
 </head>
 <body>
-
-<div class="topbar">
-  <div class="topbar-name">Maria de <span>Fátima</span> Vilares Godinho</div>
-  <button class="btn-dl" onclick="window.print()">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-    Descarregar CV
-  </button>
+<nav>
+  <a class="logo" href="index.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASAAAAB4CAIAAADdS7j5AAABCGlDQ1BJQ0MgUHJvZmlsZQAAeJxjYGA8wQAELAYMDLl5JUVB7k4KEZFRCuwPGBiBEAwSk4sLGHADoKpv1yBqL+viUYcLcKakFicD6Q9ArFIEtBxopAiQLZIOYWuA2EkQtg2IXV5SUAJkB4DYRSFBzkB2CpCtkY7ETkJiJxcUgdT3ANk2uTmlyQh3M/Ck5oUGA2kOIJZhKGYIYnBncAL5H6IkfxEDg8VXBgbmCQixpJkMDNtbGRgkbiHEVBYwMPC3MDBsO48QQ4RJQWJRIliIBYiZ0tIYGD4tZ2DgjWRgEL7AwMAVDQsIHG5TALvNnSEfCNMZchhSgSKeDHkMyQx6QJYRgwGDIYMZAKbWPz9HbOBQAAAzWElEQVR42u19eZwU1dX2c+6tqp6VmWFnABGVYRFkEUQhMSAoskgQXiVAXPn0TcAYDIq++iZBjUskiwt8Bpf4fom7Rs0rCorBDVFEBAQBV3aGRWZjZrq7qu493x93pmm7e3p6hlFiUs+vfvyY7qrbt6ruueec555zLhAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAA3yAo9g+o/j/fLVjBSwzwTylWAEAkmAVBA0wEAjETEzPr78q9iOB1Bvhnky4mgCCBEIMEa8AyI1VAEiTzd3GyCBDgn2U4koBmAgNEgLYFMYSvCaxAAANgCWIwm78CAQsQIO0wJDDXe1lCQ+eABlvOYDvUk0V7y1LEBzxvq8YG+J/60VJWgJEtIpAAA6yN6uOYacZf+yAQsAD/tuIliAiaSZJmRTzeyfmpzDkFyFPMgGbNgEUEElHCPuBThQ+g3ufoFu0egA/NYAGQJBAYYEUEzSAmgtaBgAX494YgCBLQ0ib/llCbS4k9jnoqi0nFhigDBAhAkMpmsmDVSNpD9IWv3yNvlYp+xn658kEAC4AtIgEIcJSPpdMWCFiAY++lCIClIPB9oaIfsVXtwrNUSCtNiSQcA1ILBfhCS3CI2RaChQiD97LYpPQq4a9V0c+1X8N+ncPGEAAB+liYi4GABTj2kIKU5p+FCuYLq8r3IclWpEhQAxLBhgBhArQmBpOAcEiHIJQQlYK3M62Hfo+jG/3oF8r36nQYASwBJsEAM4s6mkQQQND6G/DYAgELcOwJDgAl0vlbqE1rt9YjSfUGYZOaYbAGA5CAQ5ylHU/KQ4K3K72GvFUqupm9nUrVr6GRBIgITCCtjdAycUtLWCBgAY65AyY08Fun4ArIcminJcY4M/uCpJY22BJetrajQh4g9Sn8d4G1ytus3FLtwwgUCQlBYA3NLe2wBQIW4Bg7YAy0l9ZLTuvjPK9GSsmajrpNYiiCEgwmqaUrtGQ44CywBeuwzaVQnyl+n3kNe1t9t8zoMOJ6h42MMuRAwAJ8t+kNgmJcYOfdJ7PDSodY++Jox6RZo7YUCKwEABLMmliTYBYMtphtsE0EIaol72barHmVjq5l70vfq4GuEywii0mD9VFYjoGABThW0kVMLFkqUr8Ptb2EvSq2LKhvJ6yX6w6WDJvIIc0kazj7Cxlez2q14g909EvtMmsJIiYfOhCwAN8lSBALhrazLb3MKuxOrvYtLQQxf5uDkgFNBNbETEKGGBYJJjog/bXgx11/mV8NhkAz44tl8KYDHCMVJiRDCX2KtK+gLFJCCbY0fctzPgEWE0EwCcHwSFcLDZ9zlChheb4UJ1ih1ezWMItmuWRBNH2AY2YimqiLk4XMIeb6fJRvvydKKBaKoAS0ZJGlBBH5gmuharQ3XVuPZhV1tSwNWBB1qwqBgAX4JwdzXZBgf2lLrbXQgo9NYC6xICYCaSImrks6A0vAgl3G/hAfC53WeVJoYsFNE5nARAxwjDQYEZhzBeZSbqFmj2LEw5HDhGyYqHjmOnowxcGJ52hQfCbL0VidgigM1YeVFrlvcq0FqZtCeAQkx7cykur/BcDM/J1KGfzGSA6hwMOdrOdCrRxXaUphezX7MZkYK2bWDBfsmcwWEIEYTSZRGKSEZljj/aqtflSgCRJmNWO4SNk0vWfGE9ejaa9BSmrY6vV9/5vocHxvmycMRCSEICJmVkrFHkLCt0qp9O0LIYQQzbv9NI9Oa621Tt94c5yZxm4n0Qlj/or1fHalUJLIYghAEUwbTFBHXkd9ahdBc2yhqj5Bk8h4OwKwGBZgQedobk+yo3C6kuzm+0w6rIUCxJFArAy7ypaWCrpA8BRp3+Z79M+swcxYN2Muk2H6zzDZW5YVk5MMRSv+5FAoVFhY6DiOkajDhw9XVVXFPxBm1vo7U2SipSDoiB3Y8gSKCREhOETFQvYhe4yVfY5AB1/XKOlKhDTrjAkVYqHJy+XQW46aWlvhsfpGBMzME926dfve977HzJQZncLMtbW1X3311Z49e3bu3GkmXSml1jq98BjpGj58ePfu3c10G9+mEMLzvOeff9513QT9kNBCcXHxqFGjtNaUMf/jum5VVdXBgwf37t1bWloaLwzpxSx2X5ZlDR8+fPTo0UOHDu3evXvbtm1zcnKIyHXdysrK0tLSjRs3vv7668uXLzftW5aVoI5M5/v16zdgwAClVMLtE1E0Gn3xxRej0dTpTo7jTJw4MSsrK+FNmSe5efPmdevWnXzyyQMHDkxovLmMBRPR8uXL9+/fn+m0SLAYggQTsWajsuLtwoS3FZ+cTAlDmFFHSdY3QIAmmOBdhgZLQPe07J9a+VOEsj122YbQTRETtjUOWtY496vd30jYfb3ymTZtGjcLkUhky5YtixcvHj58eMz+SSNdRJSdnb179+40bY4ePZqILMtK0+EJEyZwc1FRUbF+/fqFCxeaH4q1mebnQqHQrFmzNmzYkEn7hw4deuihh/r06RM/hcXUJoDbbrutoWtd123btm3CVbE/CwoKqqurG7r23nvvBfDLX/6SWxQjR45M/4gSNBgRDO9NJImkwNcOgiSTiglBRGRcKAJR3bUi7hMiwCRY1p8v6q+wQCEiIQVIQuA/rOwNOcV7Qm122K13OhkdO5w2O5w220OFu5y2fSwLTSHfmzx1RaNR3/fNvxnCmOahUKhXr15XXnnlypUrH3vssQ4dOmitG3oZQghm/sEPftC5c2fXdZPbjEQiSqkZM2Y0Olmay1M2kqbDRhEVFBT0799/9uzZy5cvf+edd0aPHq2UsiwrWRnatq2UOvPMM999991FixadcsopWuv4pmIw/o/5qnXr1jNnznz//fd//etfm1tOmHRqa2vNzcZ3z/M83/cPHTqUxrDUWpeXl8dOjn9uvu/X1NQ01HjzYH7FWBMZKz0TRmGoQsVQ+usHQzE01/lcHM8bcty/cYcG6g9mzcxgBvtAFMxKW6wsls/6kUu9Q7ul7QihIIhFo8HFgpmJpQaBRBMpkuaQHGaENYPqiDkb06dPHzJkyPjx4z/77DMhREMDZcaMGUbYknWU8eAnTJjQunXrsrKyNGaJ6XCCkdmMPp9xxhnLly//7//+79tuuy3BopNSep43e/bsu+++23wl6tGQpW2+Mq5dTk7O/PnzzzjjjBkzZhw6dCj+gcTuPf4JGHusIb0d3yvjPSZMB5ZlmV9P2fjRmIjUlEVYjv8PZ3pyk1o+8gGDAZ8EEYeAdX70al3x56z8Vr6vIAgq/XoVEzGUBVEhqMZvmm347S00G+/fsizLsjzP69Gjx5IlS9q2bWs+TzhTKdWuXbtx48Y1ZHKYc9q2bTt27NjMzZKj6bNSSin1m9/8Zu7cub7vx37RfHX99dcvXLjQ0BuxEZzhbAXA87wxY8a8+uqrbdu2bZK7GKAJY51hMVxwiK3V2r3Fq3YQIlbU2NoxgwBIYKelD0A3SeCPTSSHbduu65aUlNx9991KqYTxFPOdWrdu7ft++tFmtNy3wMJJKY383HHHHX379jXcgJTS9/1LLrnkzjvv9DyvIVGPWYYNkTG2bXueN2jQoGeeeca2bUPi/6sOdHNndd4Sko6vfUj1R11djfij/pM4L6z+Q+Pi1f+fTICTllqAQdIl3yI85XsvyEiesJjttCJjyhNokmKLitToppWCa2EBU0qldMBS0lzGiRo2bJhSKn5cxszI9FylcVpGjBiRTDMeTYfT9NkYorZt/+IXvzDThNa6d+/eixYtMv5kch+MEWg0oREbI2kNTTojRoy49dZbEx7IMYHW2jiQGSKjRTBCPR9BGsa7Sjq+9iHrI64VsTmImAST0Ka0Brj+MKHxgAnVJwiCNHarILP8FWVmrZlNo/5ir7ZKCgnN6eh0IigwMegDzYZL+QZ9sPSGeEPDIo0AXH311atWrYoXG611SUnJmWee2SjT6Pt+dnb2lClTfve736Xx5RqlRtP4FSmletSoUTk5OZFIhJn/+Mc/5ubm+r6f7MmYFqSU0Wh0586druu2a9euffv2RrCTf9q2bd/3586d+9RTT61fv/4YG1RNn7Aa9eWIQcQMCa37SbsVIVonP6QB3ywxmxxHgMGaWQGamJmYTdWNOg2oAAVoknWcBoGYNKCYmaCgidjXBCIBFtA+QWpS9WtvmrQkud7z37a8sULWpJUwMCDoMKyPfA9NXJptYQF74oknDhw4YHxrIwOdOnUaOXJk69atk8ereYWjR4+OJyqMnPzHf/yH4zgpR20yYTB9+vQ//OEPGS4EJ4z+Z555Zs+ePbEOG5Hr3LnzqFGj8vLykvtsXPnOnTt37979448/Puuss8aMGWP8rmTdKKUMh8O33377k08+uXPnTs/zioqKhg0b9qtf/WrIkCGe59m2nXw7lmXdeOONF1xwwTGULqXUxo0bXdfNUMzMizML6GkGIIMkWEF2EPT/QgVdlQ4LAJBaAFACmqGIGFCmGSYNaIIGFEgTM+ATaar7nKDrtRwrCMVQYB/sgmxfVxDegPdMNFLLLJjjYwgJsJij4KXaPVfkwOc0YfIayAZ9CP0p/KaugFktKF1CiJtuumn79u0JX3Xv3v2FF17o169fgh4z9lKbNm369+//+uuvGw/HDNapU6dmMomaMIj+/fufeuqpa9asaXQhOBm33nrrxo0bkz/v37//0qVLO3bsmNxno6iLiooA/OQnP0k5nsyHFRUV55133sqVK2PXlpWVLVmyZPny5U8++eSkSZOSFbsR9QkTJvTo0cNQrN+yaJk5JRKJjB49+tChQ82zLdN4JALwtTrZtjtpUaO14ciViRXUkICss/LqqmkTAG3UC5sQQ4Kp2Fu/TUQ9gWEkznzLgpWApcUPZc452faccNVBIYhjIVbQII8AYK3yDkoqBPyGoy6YYJP4iKMRBRvwjiGLWFRUZFmW4zhWPUKh0LZt22655RYjTilfxoknnoj6oEFmHjp0aL9+/TKMMDCnTZs2LXnJtdGRBKCwsNB00oqD4zgbNmz4n//5n5R9NgiHwzk5OWeffXYyCxqzlq+66qqVK1c6jhOLSzS0YTQaveiii7788suU7SulsrKyJk6c2Dw7raWQlZVl27bjOHZjMMs2GT18htASpIYLJwSfTXma+oPJ5BVDEzSxT/CJPbAn2CP2CB7gAx7IJUQJEUIEZI5aolqiGkI14bDgaqBWUyVQ6UcmKjk3VCTgU9xoF8xMEKC97O9j2A0nojEgWEdJfqA9UJPzmr9xksMsCn3++edpHJ7CwsJ4G2natGlpRnZKV2Hy5Mk5OTmNUo4ZdtjEOu3du7ehCV4ptXPnztNOO62wsDCZBTUyv2rVqscee8yyLNd1Y/whM/u+b9t2dXX1/Pnz0yzfjR49Or259U3rsUOHDnme57qu1xjME8ukq4LZJZ0FOh1ZXiq3h77+f8EkQIIpMWbjCJHIqQ4IQAIWWMKp1P5EEseTE09laIC0luBq1vvZlURpIhMtUAWLtTrajO1cWngDPopDzIrzfT8/P9/oq5QyZuw6IvI8Lz8/f9KkSUi1tPrFF1988MEHF154YXw7Qgjf97t16zZq1KglS5YkBNpmQnIYJAwv3/f79evXkN7bvn37wYMHhw0blvKmzDkPP/xwQz9qJoLnn3++tLS0U6dOCZ6emTJOPvlksz52TATMsqzLL7+8srIy/YRl/IKysrKXXnops/EhNPSJ5PQQ2vX5WygPQEBE6raauwrrS+XGPChTcZSZoVEJDZLQSNkhBhwSW0lvZyXqy7kdMwEzXG38EDfhMzNnzkwzHx88eNAMLCIaPXp0586dE0g28+err7764IMPTp06NfmtM/P06dNffPHFpna4qqrKOH4Jn0+aNGnGjBnJwqOUsm37qaeeAtC3b99ku9RoP9d133rrrYYcEmNAVldXr1q1asqUKQm/Yhrs1KmT0cnf+iIVGftw0aJFGV7y2WefZShgBIBpoOO00VzF1KQCbSaRi5gRp2xMNK9Ra5qI2eTeAVBCCyYwka0FmxAn+lr8CNcHBEumRO1Zf4rUwhdaEq3hqNawCIqblA7W0gKWm5ubm5trmEAichynuLj4iiuuuPTSS83IS8lSbN682YxFZjbhhQmiaFTiSy+9tG7dur179xYXF8fTAyZsauzYsR06dMg8mtsQ7nffffehQ4dilwghbNsuLi4eNGhQSs1j2/auXbvuvvtuAO3atUspYES0b9++3bt3p5lTzB1t2rRpypQpyTdrdEj79u2/fQFLmCsb5TOEEBUVFZlanmAi+r5wpN805cUgJWC8M8GSYpFNzGbdVwOCdSzP0hcEsoi1Jm2R2mPzJ2GXcKS+IQPSFMomziVBGpoSw6WYmIkkwxNirfIA0tTk4tpWC858zLxkyZJ4bSClbNOmTcy/T349xvDbtGmTST/p3LnzOeeckxDoaOb7PXv2GDpu2bJll19+ebyAGaeooKBg4sSJDz74oDFKM+z2iBEj0lAgCYkelmWVl5dPnTrVqNzc3NyGmj148GAkEmmEs2bet29fGiovNzf3GOaJZbLSbd5CpuHzgAbaW2KwdmoR1UI0YTNYUyxDCyahoAGvPuFLMEMTmKBMmhaBGJYSSrhM7EAXiNBCz9+rPQlS8dYq2GPKlmgrpK9TxPASU1Ryvif2SbGZo7HNNY8ZyUFEbdu27RAHE2qYTAPEC9hf/vIX13UdxzGGWX5+fsL5RmKXLFlSWVkJ4Pnnn2+IXps+fTqaEjZl+pYylD6BFjO8xZo1a0aOHPnuu++a9as0A8tIeMq7jg8CjkajacTb6Fj8K4HFKWR3FOwCoim3ppmzNYpI5kjLsewsaWcJO0s6ISmypcgXspBlK3LyhZMPJ1c4ti1bwbJlVpnV6nbme90KUbc3XxzhQoAQ3Vgex8JFYkg9MQjC0somuVH6u1kJMBm1dwx9sJQDoiFiw7KsPXv2LFq0yGQiEpFh21PyhM8884z586233tq3b1/Hjh3jtaIxNYcPH96rV6+tW7dmHtWR4TwN4J577pkzZw7ikiPTMBBZWVkxvR3/TGIdM0EbDelAc1/NIEVbEJlYAUaDNYVV4uHStqEUU6N1BpmMytIM1QrOxw7/TYcPKC+s2TfWJoTZwkiCJAni2AZgBAhmXcb4TPu7lG/UmuKvD1USYH2KndeGqdZsYRR/a0QELTS0xet9nzUkQ0E3dcJreRYxQ/veSOPMmTPLyspMqGvfvn2HDh2aEG9lXuG2bdtWrVplrJGqqqoVK1ZMnz49IX7C0A9Tp069+eabMxew5BkhZXiUUuqiiy6ybfu6664Lh8PGCi0vL2/oCXTq1CkvL+/w4cMJ1Jzv+7NmzSopKZkzZw4Rde/evSH7EEBFRcUxjEjMPIfFrLk3Sm9owBF8GkLka4Jk9htJqGcmsILOJesF4Aa34qBuxggH1Zed+vqHZtdZjLUc6fucctwSgxAh/tCL4khS2jEVsEZHcyyjXmt96aWXvvLKK7EXOXXqVDME41+tEbC//e1v4XDYBB8C+Nvf/jZ9+vQEK9H8eeGFF95+++2Z+2DJ4hTL5kpQdK1bt541a1a3bt0mTZpkvjULZckUBTO3a9euR48e69ati03wZhKZPHnyfffdZ2y/a665ZsCAAQ3NStXV1QcOHEiIpWrUWMjwhEav9Tzv2WeframpSb/Sbd7Ojh07MhrlwAnCLmEZhmbR+EiVDFf6+Uquk/Y17r4qjRBbmrSuy7XMhBpBQ+tWEsKXehCyfgBdyyySIngFawXpkN4FWg8Pza0R8I3Q9A2RZjGHeOPGjXPmzFmxYoVRBYZvvPDCC5OdKzNAly5dashJQzCuXbu2rKwsIb7RaK0+ffqcfvrpb7/9diZzPzOHw2GzmGO6bUI6kCrS12Tpjx8/fu7cub/97W8BbNq0qaGHYFnWuHHjPvzww1h6pcn4euKJJ8w0MWfOnPbt25tiAQm3bH56x44d6WNZTLhMmm+zsrLSyE+aZ2IKfsycOTMcDrfgehSAM0SokPxqAASBRgqoKQFLkWs5C/XhKli2UL72GYKPuh6GqdYhFf0slJOvqVr4MjlJkxgsHIGNFC1TzS/C0ZIClqYEQGxWXrNmzWOPPfb444+Hw2Gjr0wA4fe///2SkpLk2DwjNo8//njCIMjLy0ue+83l06dPf/vttxu1Es3J06ZNe//9903CPxEVFRUNHTr0v/7rv0488cTkKESTnzJ37twHHnigvLz8gw8+SEm3mE9mzpz5+9//3nVdUwnnnHPOefrppx3HMWyk1tpQMinvgohWr16dngVp1apVp06dvvrqK0PVJCw/dOjQoaCgoCFNVVtbmwlftX///kZnqITSdClMbuMAsQTxGUJKxQQW3PgWlswim/UWqVdFI0ILDSgCoI+mujYBEGQBntYX2nljQbVKy9QJKKRJk1DrfG3IQHXMBYyIFi1aVFpaGh+cbib+srKybdu2ffLJJ7t27YoZXfGGnKE3Uma1CCE6dOiQOWNx/vnn33DDDZWVlZl4EaWlpfFc+Z49ezZt2rRs2bK33norOc3MqNN27dqdfvrpS5cu3bBhw7Zt2xo67fjjj7/55pvnzZtnzLxp06a1atUqZgCbc1ImVhpt//LLLwMwQzw5ot+0c8EFF2zYsCEUCsWvK5hYx8mTJ5snnPAQTFONSg6Aw4cPN6nGRppxIcAKXCREP+FEdWwJrDEBAywhtrv+ISgiVvUe0FFUIxUCkGCXeaCVdYvM87jWF3aWgkphshKBayE+1B7QfDK3JaPpiWjBggXpLXKzxhULnjCzb1FRkYltbUgBZkJFxFrr0KHDmDFjnn766UwWxEy5wli5NWOs7tmz59Zbb33kkUdSRicLIU499dSlS5fW1tY+99xzc+fOTZ4XzD1ed911Bw8eXLBgAYDLLrtMKTVz5szYySlv1ny7c+fO5cuXAzAxnMmTjunwz3/+8xUrVqxYsSLBQB0xYsS8efNSpueZ57Zt27b0nhgRnXjiiQcPHmxSacpwOJxciofry6j1E87xPrlgkdkiM0NDWF8ol5vI6Tcs6BokXWUNkvwnuzAXNaTIAmlKYeloUBb4M7Y+Zg/UfAlrYR+sdevWe/bsSWmexQrIJJSL8X1/7Nix7dq1S5PG29Qw+RkzZjz99NOZEInxxZ5i+paIXnnllerq6uSUMKNeevToYf6/ePHi2bNnO46T7LOZlYO77rrr3HPP/etf/7phw4YFCxYYpjRN+qkxIBcvXlxVVUVEH3/88f79+zt06JDcDQB5eXlLly596KGHlixZsmvXLiLq2rXr+PHjZ86cGQqFUrqRQohDhw4Z7zHl8zGXZGdnv/POO5k/eRPj8sQTT1xyySUJSUMCDCIwhkjbgR/Vmb5LyXCF2AYNr3k7B9VHTYFNZQGlCVDnOs5dslUHFa0lEhQSrJRQgpNmIiZb4CPhVSlNQnAztwf7BkgOw8I1iSU3dTVSfpt+jSWZ7jNG16hRo4477ridO3c2z5MEsG/fvi+++KJ///4pR3bHjh0NMfjZZ5/96U9/mjNnTnL2JOoT3s4666yzzjorJr1oOAnFSNfOnTsXLVpkbq2qqurVV1+96KKLknM6jW5xHGfWrFmzZs1qiOtPZl9eeeUVE4mSXoMZyzNzTt9EmaW4KRIWgwj9pEWeYPgZlrtlIunrg6xAWkCqVPV0TXVEwJKsVZwQCkNTkACxYtYMEHcgeUVW6ytZSBWthZBsYqmYUoVbaNKCsM7UWWFudsTasdy+yPgh3bt3HzlyZHJJwJhHkQYpLzELuOeff/7RdIyZ0wQTtmrVCvUhyPPnz//ss88MTdLQPcbs4fSj1rCaV111lQljjy1wJy9Yx8uY7/ux6cwYCCmlK9aICaTMcPrLEIY9TvmsBMMHFxL1gPS4SRvssQJXaz+N3yXYUgylfZe0Yja1FBXDY3jQPvs+K4uol2Vf5xT+PbvoF1pp7UUEOXXl75lgFquT3D/masi1cAHoo6AtrWMrYFrryZMnZ2dnJ7jjZjRs3779iSeeMLZW8rWe502YMMEkSidHo0+bNm3hwoVNTXCO71hZWVnKZS5jQcUErLKycurUqW+++WZ+fn7KGgcZLhabu/jiiy9M0k3sk7Vr1953331XX311LKAseQ5Ko9JjcF03FArdf//9a9ascRwnEwIjc8s8TcKlMdLyYbf1ySOfMp7TBcOzqFYBTA1Rh4rQV4a6Ciub4Vlax5GTDrg1WR2lPVCIvsouIvZdr5yEZGlR1CcAkhrmV0JEH5HYqpq/AnbsBSxNMrIxZh555JFbbrklTQubN29+9NFHkwc0Mw8ePHjQoEFr1qxpdlJwQhxGPHJycmJUjWVZ69at++EPf/jCCy+0atXK87yUpX8z1Od9+/b93//93ylTpph6GEbGrr/++v79+//gBz9wXde27aY2brRcKBR65513rr322pQT1jcHs4TERApgogxHKwMScAkR40klz7CABs51nMWyUJDrKKkkU32cBzFrQY7mLAXlw+PasIQFJ5cZFAVLBiloXwjBOt5krQshBgtB6yga0SzrSg0084k1Z/ClMRUyb8S85oEDBw4cONA4/fHtmNH24osvJufzx7L6Lct68803q6urE64140lKaerGGLuoGR2urKxMeT4z5+bmGiVmLFIp5euvv37WWWdt2bLF+CHGTmv0McbqosVzgxMmTHj++ecNcWL0WCQSOf/881977TWjwTJpPF60tNa2bb/xxhsTJ06sra2NL8/YsrXpGxIxkDjMOCiVbNp4o/qdihpckD5LWPk64rl+REU913V93xxR5YV9rlG8WaqPLHxuWbvJ2mbpLy39pRRfStppkQIxWyCFIzksDNZgyVCarHWeB0iLwUcREdpkAYvFZNDX0dRamebkGTNmGPFISIUWQnz00UcbNmxQSqWsg2/y8Hfv3v3uu+/GwmpjMKPcpGZ6npeyw+l3HgNw4MCB5AvNn+3atYtPBjN6bO3atcOHD7/33ntd1zVKzHhEJkI/htgnpg/GqIuvle267rhx41577bXc3NxYpa3y8vJx48b97ne/ixXHT9l4/E+YBWtjQP7+978fM2ZMWVlZfIR+Q6+yGYg1kuJFMyS4gtzPmbObsjlkXc3DtGtfWZqgScLir92FILIhvJAlfqPDZ0fLznUrx7iV50Yrz41WjY1WjXbLf+xXVFvC4SjYbEtm1BcZnSaEPqz1WvYA4QF0FAq/OeXak7cUiH2SoYyZBau8vLyJEyeaIRLflJGo5557Ln1oiLH9nnvuuZR7O7iu26VLl2HDhh0+fDhNh1Ous5k/P/3005QbHUSjUSHEueeeG2/ZGu60vLz85z//+ZAhQxYuXLhz585Y2W0Zh9gnVVVVS5cunTJliqm57XlefDd27doVo0aMqHied9111w0ZMuTBBx/cu3dvysbjf0IIsXfv3oceemjo0KHXXnttzOZMoHyTn0yzN39IGYGlTfUMze/6vpIitvtdJjS7AnR9TanUdpDJZcbXkkgY7BNJJbJ9XaVFROtKravijlrN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fjgSicyePfvtt9/u1KnT4MGDAcydO7dPnz4jR46MRCIXXHBB7969+/XrN2/evHnz5rVp08YIxk9+8pPVq1ebOMlf/vKX8+bNM7UVJk+e/MADD1x77bVGy7322msnnXTSO++8M3r06FAodODAgalTp+7fv9/UGjn//PMvueSSm266qaCgAEBtbe28efMuueSSrl27RiKRW2655bjjjrvjjjteeumlXr16mSexfv36GTNmbNmypSmZSmYzMEiWCrRNe9uU+yShQMi+0hpM9lArVEw2ibptLRsSMKFBLEAqFjXBRJYvSIYPi5w56tDusD7TyioRUjNe1xWlys+GDAPHk3AAj4lI+yQsLSQzWeJDFQWzINEiZF7TIjk0M9h73K8NCyng26w1ISoFpxyLlHSktLa+u+fUMcAANEiBEPXc/5I5050cn7UNyZKkhMNHWAStdUK4AxG1adOmsLDQZLIUFRUVFhbm5ubm5eUVFhaed955vXv3NvXhfvWrX7355psm3PGjjz668847L7jggt/+9rdFRUU333zz3//+9wEDBjz77LNt27ZVSpWUlNxyyy25ubm33nrr7bffnpube8011/Tp08doP/OL48ePX7ly5f79+9u3b3/PPfcUFxd369bNbKNxxx13FBQUXHzxxbNnz96+ffvUqVMfffTRsrIyy7KWLl36xBNP3Hbbbb169Vq5cuWll176+eefDxgw4Kqrrkq/IpKkxJgZmuFDMfsEloBgVCn1jhu9x6ueET3042jZIU0EaKEamPe0Ju1KU7a+XsBAPlE2sl7xvd0+S8i3vMhD0Zo/R2u2eyoLVhiqkGiSzPaUT7B8QZZmydq1/HLCCt8Dm2rc37qAMYQQ6g3XfQJuETmHLSaoHD+pLOq/JQjwhfT9mt+J7DFOnguVraUP4Yo6oiQvL6+kpKR3797Z2dnxNIZxjWK7Rhi/yET07tq16/jjj7/hhhuYOT8/f9myZVu2bJFSfvTRR4899till16qtX7rrbfmz58/d+7c2traLl26jBo1CkBpaWmfPn0uvPDCDz74oFu3biaquFOnTuYXzea3jz/++OjRo+fPn8/MJ5xwwsknn2winmpqaowDdtNNN40YMeLll1++7LLL7r333pqaGsuyli1btmLFihtuuGHEiBH33HNPQUFBfn6+1trUTWl2XAjXbQkLIlggAQktdyu/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" alt="ParqueP5" width="288" height="120" style="height:56px;width:auto;display:block"></a>
+  <div class="nav-links">
+    <a href="quem-somos.html">Quem Somos</a><a href="fotos.html">Fotos</a>
+    <a href="faq.html">FAQ</a>
+    <a href="localizacao.html">Localiza&#231;&#227;o</a>
+  </div>
+  <div class="nav-right">
+    <a class="nav-reservar" href="index.html#reservar">Reservar &rarr;</a>
+    <a class="nav-phone" href="tel:+351215954758">&#128222; 215 954 758</a>
+  </div>
+  <button class="nav-burger" onclick="window.toggleMenu()" aria-label="Menu">&#9776;</button>
+</nav>
+<div class="nav-mobile" id="nav-mobile">
+  <a href="fotos.html">Fotos</a>
+  <a href="faq.html">FAQ</a>
+  <a href="localizacao.html">Localiza&#231;&#227;o</a>
+  <a href="index.html#reservar" style="color:var(--red);font-weight:700">Reservar &rarr;</a>
+  <a href="tel:+351215954758">&#128222; 215 954 758</a>
 </div>
 
-<header class="hero">
-  <div>
-    <div class="hero-badge">Disponível para novas oportunidades</div>
-    <h1>Maria de <em>Fátima</em><br>Vilares Godinho</h1>
-    <p class="hero-sub"><strong>Recursos Humanos</strong> &nbsp;·&nbsp; <strong>Administração</strong> &nbsp;·&nbsp; <strong>Gestão de Pessoas</strong></p>
+<main id="main-content"><section class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-badge">&#9992;&#65039; &nbsp;aeroporto de lisboa</div>
+      <h1>Estacione<br>junto ao <em>aeroporto.</em><br>Sem complica&ccedil;&otilde;es.</h1>
+      <p class="hero-sub">Transfer gratuito 24h inclu&iacute;do. Coberto, toldo ou descoberto. Pagamento s&oacute; no regresso.</p>
+      <div class="trust-row">
+        <div class="trust-item"><span class="trust-icon">&#128336;</span> 24h / 365 dias</div>
+        <div class="trust-item"><span class="trust-icon">&#128656;</span> Transfer gr&aacute;tis</div>
+        <div class="trust-item"><span class="trust-icon">&#128249;</span> CCTV</div>
+        <div class="trust-item"><span class="trust-icon">&#128179;</span> Paga no regresso</div>
+      </div>
+    </div>
+    <div class="form-card" id="form-card">
+      <div class="form-card-header"><h2>Solicitar Reserva</h2><p>Confirmamos em menos de 1 hora</p></div>
+      <div id="main-form">
+        <div class="step-indicator">
+          <div class="step-dot active" id="dot-1"></div>
+          <div class="step-dot" id="dot-2"></div>
+          <div class="step-dot" id="dot-3"></div>
+        </div>
+        <!-- PASSO 1 -->
+        <div class="form-step active" id="step-1">
+          <div class="step-title">Passo 1 / 3 &mdash; Os seus dados</div>
+          <div id="err-1" class="form-error"></div>
+          <div class="form-group"><label>Nome completo *</label><input type="text" id="nome" placeholder="O seu nome"></div>
+          <div class="form-row">
+            <div class="form-group"><label>Telefone *</label><input type="tel" id="telefone" placeholder="+351 9xx xxx xxx"></div>
+            <div class="form-group"><label>Email *</label><input type="email" id="email" placeholder="email@exemplo.pt"></div>
+          </div>
+          <div class="form-group"><label>Matr&iacute;cula</label><input type="text" id="matricula" placeholder="AA-00-BB"></div>
+          <div class="form-nav"><button class="btn-next" onclick="window.goToStep(2)">Seguinte &rarr;</button></div>
+        </div>
+        <!-- PASSO 2 -->
+        <div class="form-step" id="step-2">
+          <div class="step-title">Passo 2 / 3 &mdash; Estadia e servi&ccedil;os</div>
+          <div id="err-2" class="form-error"></div>
+          <div class="form-row">
+            <div class="form-group"><label>Data de entrada *</label><input type="date" id="entrada" onchange="window.calcularPreco()"></div>
+            <div class="form-group"><label>Hora de entrada</label><input type="time" id="hora-entrada"></div>
+          </div>
+          <div class="form-group"><label>N&ordm; voo de partida</label><input type="text" id="voo-partida" placeholder="ex: TP234" oninput="this.value=this.value.toUpperCase()"></div>
+          <div class="form-row">
+            <div class="form-group"><label>Data de sa&iacute;da *</label><input type="date" id="saida" onchange="window.calcularPreco()"></div>
+            <div class="form-group"><label>Hora de sa&iacute;da</label><input type="time" id="hora-saida"></div>
+          </div>
+          <div class="form-group"><label>N&ordm; voo de regresso</label><input type="text" id="voo-regresso" placeholder="ex: TP235" oninput="this.value=this.value.toUpperCase()"></div>
+          <div class="form-group"><label>Tipo de estacionamento *</label>
+            <select id="tipo" onchange="window.calcularPreco()">
+              <option value="">Selecione...</option>
+              <option value="Descoberto">Descoberto</option>
+              <option value="Toldo">Toldo</option>
+              <option value="Coberto">Coberto</option>
+            </select>
+          </div>
+          <div class="price-display" id="price-display">
+            <div class="price-main">
+              <div><div class="price-label">Estimativa de pre&ccedil;o</div><div class="price-value"><span>&euro;</span><span id="price-total">0</span></div></div>
+              <div style="text-align:right"><div class="price-label">Dias de calend&aacute;rio</div><div style="font-family:'Barlow Condensed',sans-serif;font-size:32px;font-weight:900;color:rgba(255,255,255,.5)" id="price-days">0</div></div>
+            </div>
+            <div class="price-breakdown" id="price-breakdown"></div>
+            <div class="price-note">* Valor estimado. O pre&ccedil;o final &eacute; confirmado na reserva.</div>
+          </div>
+          <div class="form-divider">servi&ccedil;os extra (opcional)</div>
+          <div class="extras-grid">
+            <div class="extra-option"><input type="checkbox" id="extra-lavagem" onchange="window.validarExtras('lavagem')"><label class="extra-label" for="extra-lavagem"><span class="extra-icon">&#128703;</span><span class="extra-name">Lavagem Completa</span><span class="extra-price">+ &euro;30</span><div class="extra-check">&#10003;</div></label></div>
+            <div class="extra-option"><input type="checkbox" id="extra-eletrico" onchange="window.validarExtras('eletrico')"><label class="extra-label" for="extra-eletrico"><span class="extra-icon">&#9889;</span><span class="extra-name">Carregamento El&eacute;trico</span><span class="extra-price">+ &euro;25</span><div class="extra-check">&#10003;</div></label></div>
+            <div class="extra-option"><input type="checkbox" id="extra-chave" onchange="window.validarExtras('chave')"><label class="extra-label" for="extra-chave"><span class="extra-icon">&#128273;</span><span class="extra-name">Leve a Chave</span><span class="extra-price">+ &euro;15</span><div class="extra-check">&#10003;</div></label></div>
+          </div>
+          <div id="extras-aviso" style="display:none;background:#fff3cd;border:1px solid #e6c200;border-radius:4px;padding:10px 14px;font-size:12px;font-weight:600;color:#7a6000;margin-top:8px">
+            &#9888; <strong>Leve a Chave</strong> n&atilde;o &eacute; compat&iacute;vel com Lavagem nem Carregamento El&eacute;ctrico &mdash; com a chave consigo a equipa n&atilde;o tem acesso &agrave; viatura.
+          </div>
+          <div class="form-nav">
+            <button class="btn-back" onclick="window.goToStep(1)">&larr; Voltar</button>
+            <button class="btn-next" onclick="window.goToStep(3)">Seguinte &rarr;</button>
+          </div>
+        </div>
+        <!-- PASSO 3 -->
+        <div class="form-step" id="step-3">
+          <div class="step-title">Passo 3 / 3 &mdash; Confirma&ccedil;&atilde;o</div>
+          <div id="summary" style="background:#f8f8f8;border-radius:6px;padding:16px;margin-bottom:12px;font-size:13px;line-height:2;border-left:3px solid var(--red)"></div>
+          <div class="form-group"><label>Notas adicionais</label><textarea id="notas" rows="2" placeholder="Alguma informa&ccedil;&atilde;o extra..."></textarea></div>
+          <div style="display:flex;flex-direction:column;gap:10px;margin:14px 0">
+            <label style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:#444;cursor:pointer;line-height:1.5">
+              <input type="checkbox" id="aceito-termos" style="margin-top:2px;accent-color:var(--red);flex-shrink:0;width:16px;height:16px">
+              Li e aceito os <a href="termos.html" target="_blank" style="color:var(--red);font-weight:700;text-decoration:underline;margin:0 3px">termos e condi&ccedil;&otilde;es</a>.
+            </label>
+            <label style="display:flex;align-items:flex-start;gap:10px;font-size:13px;color:#444;cursor:pointer;line-height:1.5">
+              <input type="checkbox" id="aceito-privacidade" style="margin-top:2px;accent-color:var(--red);flex-shrink:0;width:16px;height:16px">
+              Li e aceito a <a href="privacidade.html" target="_blank" style="color:var(--red);font-weight:700;text-decoration:underline;margin:0 3px">pol&iacute;tica de privacidade</a>.
+            </label>
+          </div>
+          <div id="err-3" style="display:none;background:#fff0f0;border:1.5px solid var(--red);color:var(--red);border-radius:4px;padding:10px 14px;font-size:13px;font-weight:600;margin-bottom:10px"></div>
+          <div class="form-nav">
+            <button class="btn-back" onclick="window.goToStep(2)">&larr; Voltar</button>
+            <button class="btn-reserve" id="btn-submit" onclick="window.submitForm()">Confirmar Reserva &rarr;</button>
+          </div>
+          <p class="form-note">&#128274; Os seus dados est&atilde;o seguros. Resposta em menos de 1h.</p>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="hero-contacts">
-    <a href="tel:+351966885815" class="c-row">
-      <span class="c-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.29 6.29l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
-      +351 966 885 815
-    </a>
-    <a href="mailto:mfvgodinho@gmail.com" class="c-row">
-      <span class="c-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span>
-      mfvgodinho@gmail.com
-    </a>
-    <a href="https://www.linkedin.com/in/maria-v-godinho" target="_blank" class="c-row">
-      <span class="c-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></span>
-      linkedin.com/in/maria-v-godinho
-    </a>
-    <span class="c-row" style="cursor:default">
-      <span class="c-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
-      Porto Alto, Samora Correia
-    </span>
+</section>
+
+<div class="stats-strip">
+  <div class="stats-inner">
+    <div class="stat-item"><div class="stat-num">24H</div><div class="stat-label">Transfer gratuito</div></div>
+    <div class="stat-item"><div class="stat-num">365</div><div class="stat-label">Dias por ano</div></div>
+    <div class="stat-item"><div class="stat-num">5'</div><div class="stat-label">Do terminal</div></div>
+    <div class="stat-item"><div class="stat-num">&#10003;</div><div class="stat-label">Pagamento no regresso</div></div>
   </div>
-</header>
-
-<div class="layout">
-  <aside class="sidebar">
-    <div class="s-section">
-      <div class="s-title">Sobre mim</div>
-      <p class="about-p">Profissional com vasta experiência em Recursos Humanos e Administração, com forte capacidade de organização, comunicação eficaz e gestão de processos.</p>
-    </div>
-    <div class="s-section">
-      <div class="s-title">Competências</div>
-      <div class="skills-grid">
-        <div class="skill-pill"><span class="skill-dot"></span>Comunicação eficaz</div>
-        <div class="skill-pill"><span class="skill-dot"></span>Organização e planeamento</div>
-        <div class="skill-pill"><span class="skill-dot"></span>Gestão de prioridades</div>
-        <div class="skill-pill"><span class="skill-dot"></span>Ética e confidencialidade</div>
-        <div class="skill-pill"><span class="skill-dot"></span>Resolução de problemas</div>
-        <div class="skill-pill"><span class="skill-dot"></span>Trabalho em equipa</div>
-        <div class="skill-pill"><span class="skill-dot"></span>Gestão de conflitos</div>
-        <div class="skill-pill"><span class="skill-dot"></span>Adaptabilidade</div>
-      </div>
-    </div>
-    <div class="s-section">
-      <div class="s-title">Formação</div>
-      <div class="edu-item"><div class="edu-name">12.º Ano — Humanidades</div></div>
-      <div class="edu-item">
-        <div class="edu-name">CCP</div>
-        <div class="edu-sub">Certificado de Competências Pedagógicas</div>
-      </div>
-    </div>
-    <div class="s-section">
-      <div class="s-title">Idiomas</div>
-      <div class="lang-row"><span>Português</span><span class="lang-badge native">Nativo</span></div>
-      <div class="lang-row"><span>Inglês</span><span class="lang-badge">Regular</span></div>
-      <div class="lang-row"><span>Espanhol</span><span class="lang-badge">Regular</span></div>
-    </div>
-  </aside>
-
-  <main class="content">
-    <div class="c-section">
-      <div class="c-header">
-        <div class="c-header-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
-        </div>
-        <h2 class="c-title">Experiência Profissional</h2>
-        <div class="c-line"></div>
-      </div>
-      <div class="tl">
-
-        <div class="tl-item">
-          <div class="tl-dot current"></div>
-          <div class="tl-card">
-            <div class="tl-period">Março 2023 — Presente</div>
-            <div class="tl-role">Assistente Administrativa</div>
-            <div class="tl-company">Spinvalue — Soluções para Gestão, S.A.</div>
-            <div class="tl-tags">
-              <span class="tag highlight">Atual</span>
-              <span class="tag">Recrutamento</span>
-              <span class="tag">Processamento salarial</span>
-              <span class="tag">Medicina do trabalho</span>
-              <span class="tag">Arquivo digital</span>
-              <span class="tag">Apoio jurídico</span>
-              <span class="tag">Formação</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="tl-item">
-          <div class="tl-dot"></div>
-          <div class="tl-card">
-            <div class="tl-period">Maio 2021 — Dezembro 2024</div>
-            <div class="tl-role">Assistente Administrativa</div>
-            <div class="tl-company">Preco Circular Norte</div>
-            <div class="tl-tags">
-              <span class="tag">Apoio administrativo</span>
-              <span class="tag">Digitalização</span>
-              <span class="tag">Correspondência</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="tl-item">
-          <div class="tl-dot"></div>
-          <div class="tl-card">
-            <div class="tl-period">Agosto 2022 — Fevereiro 2023</div>
-            <div class="tl-role">Assistente Administrativa</div>
-            <div class="tl-company">Spinerg — Soluções para Energia, S.A.</div>
-            <div class="tl-tags">
-              <span class="tag">Apoio RH</span>
-              <span class="tag">Gestão documental</span>
-              <span class="tag">Serviços externos</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="tl-item">
-          <div class="tl-dot"></div>
-          <div class="tl-card">
-            <div class="tl-period">Setembro 2020 — Abril 2021</div>
-            <div class="tl-role">Responsável de Recrutamento</div>
-            <div class="tl-company">Setor Imobiliário</div>
-            <div class="tl-tags">
-              <span class="tag">Definição de perfis</span>
-              <span class="tag">Triagem de CVs</span>
-              <span class="tag">Entrevistas</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="tl-item">
-          <div class="tl-dot"></div>
-          <div class="tl-card">
-            <div class="tl-period">Março 2017 — Março 2018</div>
-            <div class="tl-role">Responsável de Recursos Humanos</div>
-            <div class="tl-company">Splendid Opportunity, Lda. &amp; Setor Fabril</div>
-            <div class="tl-tags">
-              <span class="tag">Seleção</span>
-              <span class="tag">Integração</span>
-              <span class="tag">Gestão de desempenho</span>
-              <span class="tag">Formação</span>
-              <span class="tag">Legislação laboral</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="tl-item">
-          <div class="tl-dot"></div>
-          <div class="auchan-bar">
-            <div class="tl-period" style="color:#e87a5d">1993 — 2017</div>
-            <div class="tl-role" style="color:#fff;font-family:'Playfair Display',serif;font-size:18px;margin-bottom:2px;">Responsável de Recursos Humanos</div>
-            <div class="tl-company" style="color:#5dd6d6;margin-bottom:16px;">Auchan Retail Portugal</div>
-            <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:4px;">
-              <div class="auchan-years">24</div>
-              <div class="auchan-label">anos de carreira</div>
-            </div>
-            <div class="auchan-tags">
-              <span class="auchan-tag">Seleção &amp; Recrutamento</span>
-              <span class="auchan-tag">Estruturas salariais</span>
-              <span class="auchan-tag">Gestão de contratos</span>
-              <span class="auchan-tag">Saúde &amp; Segurança</span>
-              <span class="auchan-tag">Bem-estar organizacional</span>
-              <span class="auchan-tag">Gestão de conflitos</span>
-              <span class="auchan-tag">Legislação laboral</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </main>
 </div>
 
-<footer class="cv-footer">
-  <span>© 2026 · Maria de Fátima Vilares Godinho</span>
-  <a href="https://www.linkedin.com/in/maria-v-godinho" target="_blank">linkedin.com/in/maria-v-godinho</a>
+<section class="features">
+  <div class="features-inner">
+    <p class="section-label">Servi&ccedil;os inclu&iacute;dos</p>
+    <h2 class="section-title">Tudo o que precisa<br>para viajar tranquilo</h2>
+    <div class="features-grid">
+      <div class="feature-card"><span class="feature-icon">&#128656;</span><h3>Transfer Gratuito 24h</h3><p>Liga&ccedil;&atilde;o cont&iacute;nua entre o ParqueP5 e o terminal, a qualquer hora do dia ou da noite.</p></div>
+      <div class="feature-card"><span class="feature-icon">&#128273;</span><h3>Leve a Chave</h3><p>Entregue a viatura nas nossas instala&ccedil;&otilde;es e mantenha a chave consigo durante a viagem.</p></div>
+      <div class="feature-card"><span class="feature-icon">&#128703;</span><h3>Lavagem Completa</h3><p>Regresse com o carro limpo. Exterior e interior &mdash; conforme a sua prefer&ecirc;ncia.</p></div>
+      <div class="feature-card"><span class="feature-icon">&#9889;</span><h3>Carregamento El&eacute;trico</h3><p>Carregue o ve&iacute;culo durante a estadia. Regresse com autonomia total.</p></div>
+      <div class="feature-card"><span class="feature-icon">&#128249;</span><h3>CCTV Permanente</h3><p>Vigil&acirc;ncia cont&iacute;nua 24h com c&acirc;meras de seguran&ccedil;a em todo o per&iacute;metro.</p></div>
+      <div class="feature-card"><span class="feature-icon">&#128179;</span><h3>Pagamento no Regresso</h3><p>N&atilde;o paga nada &agrave; chegada. O pagamento &eacute; efetuado quando regressar da viagem.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="pricing">
+  <div class="pricing-inner">
+    <p class="section-label">Tarifas</p>
+    <h2 class="section-title">Escolha o seu<br>tipo de estacionamento</h2>
+    <div class="pricing-grid">
+      <div class="price-card">
+        <div class="price-type">Op&ccedil;&atilde;o econ&oacute;mica</div><h3>Descoberto</h3>
+        <div class="price-desde">Desde</div><div class="price-valor">&euro;5<span>/dia</span></div>
+        <ul class="price-features"><li><span class="check">&#10003;</span> Transfer gratuito 24h</li><li><span class="check">&#10003;</span> CCTV permanente</li><li><span class="check">&#10003;</span> Pagamento no regresso</li></ul>
+        <button class="btn-price" onclick="window.scrollToForm()">Reservar</button>
+      </div>
+      <div class="price-card featured">
+        <div class="price-type">Mais conforto</div><h3>Toldo</h3>
+        <div class="price-desde">Desde</div><div class="price-valor">&euro;6<span>/dia</span></div>
+        <ul class="price-features"><li><span class="check">&#10003;</span> Transfer gratuito 24h</li><li><span class="check">&#10003;</span> Protegido do sol e chuva</li><li><span class="check">&#10003;</span> CCTV permanente</li></ul>
+        <button class="btn-price red" onclick="window.scrollToForm()">Reservar</button>
+      </div>
+      <div class="price-card">
+        <div class="price-type">M&aacute;xima prote&ccedil;&atilde;o</div><h3>Coberto</h3>
+        <div class="price-desde">Desde</div><div class="price-valor">&euro;8<span>/dia</span></div>
+        <ul class="price-features"><li><span class="check">&#10003;</span> Transfer gratuito 24h</li><li><span class="check">&#10003;</span> Totalmente coberto</li><li><span class="check">&#10003;</span> CCTV permanente</li></ul>
+        <button class="btn-price" onclick="window.scrollToForm()">Reservar</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-strip">
+  <h2>Pronto para reservar?</h2>
+  <p>Estacionamento junto ao Aeroporto de Lisboa &mdash; Transfer gr&aacute;tis inclu&iacute;do</p>
+  <div class="cta-buttons">
+    <button class="btn-white" onclick="window.scrollToForm()">Fazer Reserva</button>
+    <a href="tel:+351215954758" class="btn-outline-white">&#128222; +351 215 954 758</a>
+  </div>
+</section>
+
+</main>
+<footer>
+  <div class="footer-info">
+    <strong>PARQUE P5</strong><br>
+    Rua Fernando Namora, Lote 1, Figo Maduro, 2685-397 Prior Velho<br>
+    <a href="/cdn-cgi/l/email-protection#abcadbc4c2c4cac4c8c7c2cec5dfce8d889d9f90dbcad9dadecedb9e8d889f9d90dbdf" style="color:rgba(255,255,255,.4);text-decoration:none">apoioaocliente&#64;parquep5&#46;pt</a>
+  </div>
+  <div class="footer-links">
+    <a href="quem-somos.html">Quem Somos</a>
+    <a href="localizacao.html">Localiza&#231;&#227;o</a>
+    <a href="fotos.html">Fotos</a>
+    <a href="faq.html">FAQ</a>
+    <a href="termos.html">Termos e Condi&#231;&#245;es</a>
+    <a href="privacidade.html">Pol&#237;tica de Privacidade</a>
+    <a     <a     <a href="https://www.livroreclamacoes.pt/Inicio/" target="_blank">Livro de Reclama&#231;&#245;es</a>
+  </div>
 </footer>
-
+<script src="parquep5.js"></script>
+<script data-cfasync="false">
+window.toggleMenu=function(){var m=document.getElementById('nav-mobile');if(m)m.classList.toggle('open');};
+</script>
 </body>
 </html>
